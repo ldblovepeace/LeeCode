@@ -1,7 +1,7 @@
 package Questions;
 
 public class Q1365 {
-//	±©Á¦½â·¨£¬Ö±½Ó´ÓÍ·µ½Î²±éÀú
+//	ï¿½ï¿½ï¿½ï¿½ï¿½â·¨ï¿½ï¿½Ö±ï¿½Ó´ï¿½Í·ï¿½ï¿½Î²ï¿½ï¿½ï¿½ï¿½
 	public int[] smallerNumbersThanCurrent1(int[] nums) {
 		int r = 0;
 		int[] result = new int[nums.length];
@@ -16,8 +16,22 @@ public class Q1365 {
 		}
 		return result;
     }
-//	ÅÅĞò
-//	¼ÆÊı
+//	ï¿½ï¿½ï¿½ï¿½
+    public int[] smallerNumbersThanCurrent2(int[] nums) {
+        int r = 0;
+        int[] result = new int[nums.length];
+        for(int i=0; i< nums.length; i++) {
+            for(int j=0; j < nums.length; j++) {
+                if(nums[i] >nums[j]) {
+                    r=r+1;
+                }
+            }
+            result[i]=r;
+            r=0;
+        }
+        return result;
+    }
+//	ï¿½ï¿½ï¿½ï¿½
 	public int[] smallerNumbersThanCurrent3(int[] nums) {
 		int count[] = new int[101];
 		int result[] = new int[nums.length];
@@ -37,4 +51,12 @@ public class Q1365 {
 		}
 		return r;
 	}
+// 	å¿«é€Ÿæ’åºï¼ï¼ï¼
+	public int[] fastSort(int[] nums){
+		int low= 0;
+		int high=nums.length-1;
+		int key = nums[low];
+	    int[] result = new int[nums.length];
+	    return result;
+    }
 }
