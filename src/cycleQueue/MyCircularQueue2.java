@@ -1,3 +1,4 @@
+package cycleQueue;
 class MyCircularQueue2{
     private Integer[] data;
     private int head;

@@ -1,6 +1,6 @@
+package cycleQueue;
 import com.sun.glass.ui.SystemClipboard;
 
-import MyCircularQueue;
 public class CycleQueue {
 
 	public static void main(String[] args) {
