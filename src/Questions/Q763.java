@@ -11,7 +11,7 @@ public class Q763 {
 		
 		for(int i=0; i < S.length(); i++) {
 			int end = endNum[S.charAt(i)-'a'];
-//				´Ó×Ö·û¿ªÊ¼µ½×Ö·û½áÊø£¬ÕÒµ½ÖĞ¼ächarµÄ×îºó½áÊø×î´óµÄÖµ
+//				ä»å­—ç¬¦å¼€å§‹åˆ°å­—ç¬¦ç»“æŸï¼Œæ‰¾åˆ°ä¸­é—´charçš„æœ€åç»“æŸæœ€å¤§çš„å€¼Öµ
 				for(int j = 0; j < end; j++) {
 					if(endNum[S.charAt(j)-'a'] > end) {
 						end = endNum[S.charAt(j)-'a'];
@@ -33,7 +33,7 @@ public class Q763 {
 			int start = charStart.get(S.charAt(i));
 			int end = charEnd.get(S.charAt(i));
 			
-//				´Ó×Ö·û¿ªÊ¼µ½×Ö·û½áÊø£¬ÕÒµ½ÖĞ¼ächarµÄ×îºó½áÊø×î´óµÄÖµ
+//				ä»å­—ç¬¦å¼€å§‹åˆ°å­—ç¬¦ç»“æŸï¼Œæ‰¾åˆ°ä¸­é—´charçš„æœ€åç»“æŸæœ€å¤§çš„å€¼Öµ
 				for(int j = 0; j < end; j++) {
 					if(charEnd.get(S.charAt(j)) > end) {
 						end = charEnd.get(S.charAt(j));

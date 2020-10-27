@@ -1,7 +1,7 @@
 package Questions;
 
 public class Q844 {
-//    ½â·¨1£º ±©Á¦½â·¨£¬±éÀúSºÍTµÃµ½×îºóµÄÖµ,È»ºó½øĞĞ±È½Ï
+//    è§£æ³•1ï¼š æš´åŠ›è§£æ³•ï¼Œéå†Så’ŒTå¾—åˆ°æœ€åçš„å€¼,ç„¶åè¿›è¡Œæ¯”è¾ƒ
 	public boolean backspaceCompare(String S, String T) {
 		 if(build(S).equals(build(T))) {
 			 return true;
@@ -24,7 +24,7 @@ public class Q844 {
 	}
 	 
 	 
-//		½â·¨2£º´ÓºóÍùÇ°±éÀú£¬ÉèÖÃÖ¸Ïò¶ÔÓ¦ĞèÒª±È½ÏµÄ×Ö·ûÎ»ÖÃÖ¸Õë
+//		è§£æ³•2ï¼šä»åå¾€å‰éå†ï¼Œè®¾ç½®æŒ‡å‘å¯¹åº”éœ€è¦æ¯”è¾ƒçš„å­—ç¬¦ä½ç½®æŒ‡é’ˆ
 	public boolean backspaceCompare2(String S, String T) {
 		return true;
 	}
