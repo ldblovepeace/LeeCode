@@ -61,14 +61,17 @@ public class Q1365 {
 	    		nums[l] = nums[h];
 	    		while(l != h){
 	    			if(nums[l] > key){
-	    				nums[h] = key;
+	    				nums[h] = nums[l];
+	    				l = l+1;
 	    				break;
 					} else{
 	    				l = l+1;
 					}
 				}
-			} else {
-	    		h = h -1;
+	    		h = h-1;
+	    		}
+	    	else {
+	    		h = h-1;
 			}
 		}
 	    return l;
