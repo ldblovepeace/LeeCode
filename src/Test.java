@@ -1,6 +1,6 @@
 import Questions.Q1;
 import Questions.Q622;
-import Questions.Q844;
+import Questions.Q1365;
 
 public class Test {
 
@@ -15,18 +15,26 @@ public class Test {
 //		Q622
 //		["MyCircularQueue","enQueue","Front","isFull","enQueue","enQueue","enQueue","deQueue","enQueue","enQueue","isEmpty","Rear"]
 //				[[4],[3],[],[],[7],[2],[5],[],[4],[2],[],[]]
-		/*
-		 * Q622 c = new Q622(4);
-		 * 
-		 * System.out.println(c.enQueue(3)); System.out.println(c.Front());
-		 * System.out.println(c.isFull()); System.out.println(c.enQueue(7));
-		 * System.out.println(c.enQueue(2)); System.out.println(c.enQueue(5));
-		 * System.out.println(c.deQueue()); System.out.println(c.enQueue(4));
-		 * System.out.println(c.enQueue(2)); System.out.println(c.isEmpty());
-		 * System.out.println(c.Rear());
-		 */
-//		Q844
+		/*Q622 c = new Q622(4);
 		
+		System.out.println(c.enQueue(3));
+		System.out.println(c.Front());
+		System.out.println(c.isFull());
+		System.out.println(c.enQueue(7));
+		System.out.println(c.enQueue(2));
+		System.out.println(c.enQueue(5));
+		System.out.println(c.deQueue());
+		System.out.println(c.enQueue(4));
+		System.out.println(c.enQueue(2));
+		System.out.println(c.isEmpty());
+		System.out.println(c.Rear());*/
+
+		Q1365 q = new Q1365();
+		int nums[] = {3,6,7,4,2,1,9,8,0,5};
+		q.quickSort(nums,0,9);
+		for (int i=0; i<10; i++){
+			System.out.println(nums[i]);
+		}
 	}
 
 }
