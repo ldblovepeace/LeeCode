@@ -1,7 +1,7 @@
 package Questions;
 
 public class Q1365 {
-//	暴力解法，直接从头到尾遍历
+//	鏆村姏瑙ｆ硶
 	public int[] smallerNumbersThanCurrent1(int[] nums) {
 		int r = 0;
 		int[] result = new int[nums.length];
@@ -16,8 +16,22 @@ public class Q1365 {
 		}
 		return result;
     }
-//	排序
-//	计数
+//	浣跨敤鎺掑簭
+    public int[] smallerNumbersThanCurrent2(int[] nums) {
+        int r = 0;
+        int[] result = new int[nums.length];
+        for(int i=0; i< nums.length; i++) {
+            for(int j=0; j < nums.length; j++) {
+                if(nums[i] >nums[j]) {
+                    r=r+1;
+                }
+            }
+            result[i]=r;
+            r=0;
+        }
+        return result;
+    }
+//	浣跨敤璁℃暟鏁扮粍
 	public int[] smallerNumbersThanCurrent3(int[] nums) {
 		int count[] = new int[101];
 		int result[] = new int[nums.length];
@@ -36,5 +50,32 @@ public class Q1365 {
 			r=r+nums[j];
 		}
 		return r;
+	}
+// 	蹇�熸帓搴忥紒锛侊紒
+	public int findIndex(int[] nums,int low, int high){
+		int l = low;
+		int h = high;
+		int key = nums[l];
+	    while(l != h){
+	    	if(nums[h]<key) {
+	    		nums[l] = nums[h];
+	    		while(l != h){
+	    			if(nums[l] > key){
+	    				nums[h] = key;
+	    				break;
+					} else{
+	    				l = l+1;
+					}
+				}
+			} else {
+	    		h = h -1;
+			}
+		}
+	    return l;
+    }
+    public void quickSort(int[] nums, int low, int high){
+		int index = findIndex(nums,low,high);
+		quickSort(nums,low,index);
+		quickSort(nums,index+1,high);
 	}
 }
