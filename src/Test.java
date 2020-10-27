@@ -29,11 +29,21 @@ public class Test {
 		System.out.println(c.isEmpty());
 		System.out.println(c.Rear());*/
 
+//		Q1365
+//		测试快速排序
 		Q1365 q = new Q1365();
-		int nums[] = {3,6,7,4,2,1,9,8,0,5,9,5,4};
-		q.quickSort(nums,0,nums.length-1);
+		int nums[] = {3,6,7,4,2};
+		int sort[] = nums.clone();
+		q.quickSort(sort,0,sort.length-1);
+		for (int i=0; i<sort.length; i++){
+			System.out.print(sort[i]);
+		}
 		for (int i=0; i<nums.length; i++){
-			System.out.println(nums[i]);
+			System.out.print(nums[i]);
+		}
+//		测试排序方法
+		for (int i=0; i<nums.length; i++){
+			System.out.println(q.smallerNumbersThanCurrent2(nums)[i]);
 		}
 	}
 

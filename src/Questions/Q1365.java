@@ -18,18 +18,19 @@ public class Q1365 {
     }
 //	使用排序
     public int[] smallerNumbersThanCurrent2(int[] nums) {
-        int r = 0;
-        int[] result = new int[nums.length];
-        for(int i=0; i< nums.length; i++) {
-            for(int j=0; j < nums.length; j++) {
-                if(nums[i] >nums[j]) {
-                    r=r+1;
-                }
-            }
-            result[i]=r;
-            r=0;
-        }
-        return result;
+    	       int[] result = new int[nums.length];
+    	       int[] sort = nums.clone();
+//    	       注意数组对象的克隆方法
+    	       quickSort(sort,0,sort.length-1);
+    	       for(int i=0; i<nums.length; i++){
+    	           for(int j=0;j<sort.length;j++){
+    	               if(nums[i]==sort[j]){
+    	                   result[i] = j;
+    	                   break;
+    	               }
+    	           }
+    	       }
+    	       return result;
     }
 //	使用计数数组
 	public int[] smallerNumbersThanCurrent3(int[] nums) {
