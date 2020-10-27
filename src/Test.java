@@ -1,6 +1,10 @@
+import java.util.List;
+
+import treeNode.TreeNode;
 import Questions.Q1;
 import Questions.Q622;
 import Questions.Q1365;
+import Questions.Q144;
 
 public class Test {
 
@@ -31,7 +35,7 @@ public class Test {
 
 //		Q1365
 //		测试快速排序
-		Q1365 q = new Q1365();
+/*		Q1365 q = new Q1365();
 		int nums[] = {3,6,7,4,2};
 		int sort[] = nums.clone();
 		q.quickSort(sort,0,sort.length-1);
@@ -44,6 +48,18 @@ public class Test {
 //		测试排序方法
 		for (int i=0; i<nums.length; i++){
 			System.out.println(q.smallerNumbersThanCurrent2(nums)[i]);
+		}*/
+		
+		Q144 q = new Q144();
+		TreeNode root = new TreeNode(2);
+		root.left = new TreeNode(3);
+		root.right = null;
+		root.left.left = new TreeNode(1);
+		List<Integer> l =  q.preorderTraversal(root);
+
+		while(!l.isEmpty()){
+			System.out.println(l.get(0));
+			l.remove(0);
 		}
 	}
 
