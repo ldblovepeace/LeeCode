@@ -30,9 +30,9 @@ public class Test {
 		System.out.println(c.Rear());*/
 
 		Q1365 q = new Q1365();
-		int nums[] = {3,6,7,4,2,1,9,8,0,5};
-		q.quickSort(nums,0,9);
-		for (int i=0; i<10; i++){
+		int nums[] = {3,6,7,4,2,1,9,8,0,5,9,5,4};
+		q.quickSort(nums,0,nums.length-1);
+		for (int i=0; i<nums.length; i++){
 			System.out.println(nums[i]);
 		}
 	}

@@ -57,28 +57,36 @@ public class Q1365 {
 		int h = high;
 		int key = nums[l];
 	    while(l != h){
+//	    	从后往前遍历
 	    	if(nums[h]<key) {
+//	    		如果发现h比key小，当前l位置字符设为h位置数字
 	    		nums[l] = nums[h];
+	    		l = l+1;
 	    		while(l != h){
+//	    			完成替换后，从前往后遍历
 	    			if(nums[l] > key){
+//	    				发现l位置比key大，将当前h位置字符设置为l位置数字
 	    				nums[h] = nums[l];
-	    				l = l+1;
+	    				h = h-1;
 	    				break;
 					} else{
 	    				l = l+1;
 					}
 				}
-	    		h = h-1;
-	    		}
+	    	}
 	    	else {
 	    		h = h-1;
 			}
 		}
+	    nums[l] = key;
 	    return l;
     }
     public void quickSort(int[] nums, int low, int high){
-		int index = findIndex(nums,low,high);
-		quickSort(nums,low,index);
-		quickSort(nums,index+1,high);
+    	if(low < high) {
+//    		根据此条件推退出递归
+			int index = findIndex(nums,low,high);
+			quickSort(nums,low,index);
+			quickSort(nums,index+1,high);
+    	}
 	}
 }
