@@ -1,5 +1,6 @@
 import Questions.Q1;
 import Questions.Q622;
+import Questions.Q844;
 
 public class Test {
 
@@ -14,19 +15,18 @@ public class Test {
 //		Q622
 //		["MyCircularQueue","enQueue","Front","isFull","enQueue","enQueue","enQueue","deQueue","enQueue","enQueue","isEmpty","Rear"]
 //				[[4],[3],[],[],[7],[2],[5],[],[4],[2],[],[]]
-		Q622 c = new Q622(4);
+		/*
+		 * Q622 c = new Q622(4);
+		 * 
+		 * System.out.println(c.enQueue(3)); System.out.println(c.Front());
+		 * System.out.println(c.isFull()); System.out.println(c.enQueue(7));
+		 * System.out.println(c.enQueue(2)); System.out.println(c.enQueue(5));
+		 * System.out.println(c.deQueue()); System.out.println(c.enQueue(4));
+		 * System.out.println(c.enQueue(2)); System.out.println(c.isEmpty());
+		 * System.out.println(c.Rear());
+		 */
+//		Q844
 		
-		System.out.println(c.enQueue(3));
-		System.out.println(c.Front());
-		System.out.println(c.isFull());
-		System.out.println(c.enQueue(7));
-		System.out.println(c.enQueue(2));
-		System.out.println(c.enQueue(5));
-		System.out.println(c.deQueue());
-		System.out.println(c.enQueue(4));
-		System.out.println(c.enQueue(2));
-		System.out.println(c.isEmpty());
-		System.out.println(c.Rear());
 	}
 
 }
