@@ -2,6 +2,7 @@ import java.util.List;
 
 import treeNode.TreeNode;
 import Questions.Q1;
+import Questions.Q1207;
 import Questions.Q622;
 import Questions.Q1365;
 import Questions.Q144;
@@ -50,17 +51,20 @@ public class Test {
 			System.out.println(q.smallerNumbersThanCurrent2(nums)[i]);
 		}*/
 		
-		Q144 q = new Q144();
-		TreeNode root = new TreeNode(2);
-		root.left = new TreeNode(3);
-		root.right = null;
-		root.left.left = new TreeNode(1);
-		List<Integer> l =  q.preorderTraversal(root);
+/*
+ * Q144 q = new Q144(); TreeNode root = new TreeNode(2); root.left = new
+ * TreeNode(3); root.right = null; root.left.left = new TreeNode(1);
+ * List<Integer> l = q.preorderTraversal(root);
+ * 
+ * while(!l.isEmpty()){ System.out.println(l.get(0)); l.remove(0); }
+ */
+		
+//		Q1207
+		Q1207 q = new Q1207();
+		int[] arr = new int[] {1,2,2,1,1,3};
+//		System.out.println(q.uniqueOccurrences1(arr));
+		System.out.println(q.uniqueOccurrences2(arr));
 
-		while(!l.isEmpty()){
-			System.out.println(l.get(0));
-			l.remove(0);
-		}
 	}
 
 }

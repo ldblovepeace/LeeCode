@@ -23,4 +23,14 @@ public class Q144 {
 				return l;
 			}
 		}
+	
+	public List<Integer> preorderTraversal1(TreeNode root) {
+//		迭代算法；暂未实现
+			List<Integer> l = new ArrayList<Integer>();
+			if (root == null ){
+				return null;
+			}else{
+				return l;
+			}
+		}
 }
