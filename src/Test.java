@@ -7,6 +7,7 @@ import Questions.Q129;
 import Questions.Q622;
 import Questions.Q1365;
 import Questions.Q144;
+import Questions.Q463;
 
 public class Test {
 
@@ -68,15 +69,30 @@ public class Test {
 */
 		
 //		Q129
-		TreeNode root = new TreeNode(2); 
-		root.left = new TreeNode(3); 
-		root.right = null; 
-		root.left.left = new TreeNode(1);
+/*
+ * TreeNode root = new TreeNode(2); root.left = new TreeNode(3); root.right =
+ * null; root.left.left = new TreeNode(1);
+ * 
+ * Q129 q = new Q129(); System.out.println(q.sumNumbers(root));
+ */
 		
-		Q129 q = new Q129();
-		System.out.println(q.sumNumbers(root));
-		
-		
+//		Q463
+		int grid1[][] = {{1,0}};
+		int grid2[][] = {{1}};
+		int grid3[][] = {{0,1,0},{1,1,1,0},{0,1,0,0},{1,1,0,0}};
+		for(int i = 0; i< grid3.length;i++) {
+			System.out.println("第"+i+"行:");
+			System.out.println("第"+i+"行长度:" + grid3[i].length);
+			for(int j=0; j< grid3[i].length; j++) {
+				System.out.print("第"+j+"列:");
+				System.out.print(grid3[i][j]);
+			}
+			System.out.println();
+		}
+		Q463 q = new Q463();
+		System.out.println(q.islandPerimeter(grid1));
+		System.out.println(q.islandPerimeter(grid2));
+		System.out.println(q.islandPerimeter(grid3));
 	}
 
 }
