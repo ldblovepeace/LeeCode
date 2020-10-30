@@ -2,7 +2,8 @@ import java.util.List;
 
 import treeNode.TreeNode;
 import Questions.Q1;
-import Questions.Q1207;
+import Questions.Q129;
+//import Questions.Q1207;
 import Questions.Q622;
 import Questions.Q1365;
 import Questions.Q144;
@@ -60,11 +61,22 @@ public class Test {
  */
 		
 //		Q1207
-		Q1207 q = new Q1207();
+/*		Q1207 q = new Q1207();
 		int[] arr = new int[] {1,2,2,1,1,3};
 //		System.out.println(q.uniqueOccurrences1(arr));
 		System.out.println(q.uniqueOccurrences2(arr));
-
+*/
+		
+//		Q129
+		TreeNode root = new TreeNode(2); 
+		root.left = new TreeNode(3); 
+		root.right = null; 
+		root.left.left = new TreeNode(1);
+		
+		Q129 q = new Q129();
+		System.out.println(q.sumNumbers(root));
+		
+		
 	}
 
 }
