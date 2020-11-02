@@ -7,6 +7,7 @@ import Questions.Q129;
 import Questions.Q622;
 import Questions.Q1365;
 import Questions.Q144;
+import Questions.Q349;
 import Questions.Q463;
 
 public class Test {
@@ -77,7 +78,7 @@ public class Test {
  */
 		
 //		Q463
-		int grid1[][] = {{1,0}};
+/*		int grid1[][] = {{1,0}};
 		int grid2[][] = {{1}};
 		int grid3[][] = {{0,1,0},{1,1,1,0},{0,1,0,0},{1,1,0,0}};
 		for(int i = 0; i< grid3.length;i++) {
@@ -93,6 +94,17 @@ public class Test {
 		System.out.println(q.islandPerimeter(grid1));
 		System.out.println(q.islandPerimeter(grid2));
 		System.out.println(q.islandPerimeter(grid3));
-	}
 
+*/
+		
+//		Q349
+		int[] nums1 = {1,2,2,1};
+		int[] nums2 = {2,2};
+		
+		Q349 q = new Q349();
+		int[] result = q.intersection(nums1, nums2);
+		for(int i = 0; i < result.length; i++){
+			System.out.println(result[i]);
+		}
+	}
 }
