@@ -8,6 +8,9 @@ public class Q1301 {
 		int length = board.size();
 		int[][] score = new int[length][length];
 		int[][] path = new int[length][length];
+		if(length == 1) {
+			return new int[] {0,0};
+		}
 		score[length-1][length-1] = 0;
 		path[length-1][length-1] = 1;
 		int modNum = 1000000007;
@@ -16,13 +19,13 @@ public class Q1301 {
 				if(board.get(i).charAt(j) != 'X' && (path[i][j-1]!=0 || path[i-1][j]!=0 || path[i-1][j-1]!=0)) {
 					int maxValue = Math.max(Math.max(score[i][j-1], score[i-1][j]),score[i-1][j-1]);
 					score[i][j] = maxValue + board.get(i).charAt(j) - '0';
-					if(maxValue == path[i-1][j]) {
+					if(maxValue == board.get(i-1).charAt(j)) {
 						path[i][j] = path[i-1][j] +path[i][j];
 					}
-					if(maxValue == path[i][j-1]) {
+					if(maxValue == board.get(i).charAt(j-1)) {
 						path[i][j] = path[i][j-1] +path[i][j];
 					}
-					if(maxValue == path[i-1][j-1]) {
+					if(maxValue == board.get(i-1).charAt(j-1)) {
 						path[i][j] = path[i-1][j-1] +path[i][j];
 					}
 				}else {

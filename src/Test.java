@@ -1,14 +1,20 @@
 import java.util.List;
 
 import treeNode.TreeNode;
+import java.util.ArrayList;
 import Questions.Q1;
+import Questions.Q127;
 import Questions.Q129;
+import Questions.Q1301;
 //import Questions.Q1207;
 import Questions.Q622;
+import Questions.Q941;
 import Questions.Q1365;
 import Questions.Q144;
+import Questions.Q31;
 import Questions.Q349;
 import Questions.Q463;
+import Questions.Q514;
 
 public class Test {
 
@@ -98,13 +104,46 @@ public class Test {
 */
 		
 //		Q349
-		int[] nums1 = {1,2,2,1};
-		int[] nums2 = {2,2};
+/*
+ * int[] nums1 = {1,2,2,1}; int[] nums2 = {2,2};
+ * 
+ * Q349 q = new Q349(); int[] result = q.intersection(nums1, nums2); for(int i =
+ * 0; i < result.length; i++){ System.out.println(result[i]); }
+ */
 		
-		Q349 q = new Q349();
-		int[] result = q.intersection(nums1, nums2);
-		for(int i = 0; i < result.length; i++){
-			System.out.println(result[i]);
-		}
+//		Q1301
+/*
+ * List<String> board = new ArrayList<>(); board.add("E11"); board.add("133");
+ * board.add("13S"); Q1301 q = new Q1301();
+ * System.out.println(q.pathsWithMaxScore1(board)[0]);
+ * System.out.println(q.pathsWithMaxScore1(board)[1]);
+ * System.out.println(q.pathsWithMaxScore(board)[0]);
+ * System.out.println(q.pathsWithMaxScore(board)[1]);
+ */
+//		Q941
+/*
+ * Q941 q = new Q941(); int[] A = {0,3,2,1};
+ * System.out.println(q.validMountainArray(A));
+ */
+//		Q127
+//		Q127 q127 = new Q127();
+//		String word = "like";
+//		String listWord = "like";
+//		System.out.println(q127.isTransfer(word, listWord));
+//		Q31
+//		Q31 q31 = new Q31();
+//		int[] nums = {1,4,3,2};
+//		q31.nextPermutation(nums);
+//		for(int i = 0; i< nums.length; i++) {
+//			System.out.println(nums[i]);
+//		}
+		
+//		Q514
+		Q514 q514 = new Q514();
+		String ring = "caotmcaataijjxi";
+		String key = "oatji";
+//		oatjiioicitatajtijciocjcaaxaaatmctxamacaamjjx
+		System.out.println(q514.findRotateSteps2(ring, key));
+		System.out.println(q514.findRotateSteps1(ring, key));
 	}
 }
