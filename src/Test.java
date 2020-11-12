@@ -14,6 +14,7 @@ import Questions.Q144;
 import Questions.Q31;
 import Questions.Q349;
 import Questions.Q463;
+import Questions.Q495;
 import Questions.Q514;
 
 public class Test {
@@ -139,11 +140,17 @@ public class Test {
 //		}
 		
 //		Q514
-		Q514 q514 = new Q514();
-		String ring = "caotmcaataijjxi";
-		String key = "oatji";
-//		oatjiioicitatajtijciocjcaaxaaatmctxamacaamjjx
-		System.out.println(q514.findRotateSteps2(ring, key));
-		System.out.println(q514.findRotateSteps1(ring, key));
+//		Q514 q514 = new Q514();
+//		String ring = "caotmcaataijjxi";
+//		String key = "oatji";
+////		oatjiioicitatajtijciocjcaaxaaatmctxamacaamjjx
+//		System.out.println(q514.findRotateSteps2(ring, key));
+//		System.out.println(q514.findRotateSteps1(ring, key));
+		
+//		Q495
+		Q495 q495 = new Q495();
+		int[] timeSeries = {1,4};
+		int duration = 2;
+		System.out.println(q495.findPoisonedDuration(timeSeries, duration));
 	}
 }
