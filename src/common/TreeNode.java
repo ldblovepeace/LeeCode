@@ -1,4 +1,4 @@
-package treeNode;
+package common;
 
 /**
  * Definition for a binary tree node.

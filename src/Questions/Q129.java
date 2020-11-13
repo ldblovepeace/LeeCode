@@ -3,7 +3,7 @@ package Questions;
 import java.util.ArrayList;
 import java.util.List;
 
-import treeNode.TreeNode;
+import common.TreeNode;
 
 public class Q129 {
 	public int sumNumbers(TreeNode root) {
