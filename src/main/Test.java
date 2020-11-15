@@ -15,6 +15,7 @@ import Questions.Q1365;
 import Questions.Q144;
 import Questions.Q31;
 import Questions.Q349;
+import Questions.Q402;
 import Questions.Q414;
 import Questions.Q463;
 import Questions.Q495;
@@ -174,18 +175,23 @@ public class Test {
 		
 //		Q1122
 		
-		Q1122 q1122 = new Q1122();
+//		Q1122 q1122 = new Q1122();
+//		
+//		int[] arr1 = {2,3,1,3,2,4,6,7,9,2,19};
+//		int[] arr2 = {2,1,4,3,9,6};
+//		int[] result = q1122.relativeSortArray1(arr1, arr2);
+////		int[] result = q1122.relativeSortArray2(arr1, arr2);
+//		
+//		for(int i = 0; i< result.length; i++) {
+//			System.out.println(result[i]);
+//		}
 		
-		int[] arr1 = {2,3,1,3,2,4,6,7,9,2,19};
-		int[] arr2 = {2,1,4,3,9,6};
-		int[] result = q1122.relativeSortArray1(arr1, arr2);
-//		int[] result = q1122.relativeSortArray2(arr1, arr2);
-		
-		for(int i = 0; i< result.length; i++) {
-			System.out.println(result[i]);
-		}
-		
-		
+		String num = "5337";
+		int k = 2;
+		Q402 q402 = new Q402();
+		System.out.println(q402.removeKdigits(num, k));
+		System.out.println(q402.removeKdigits4(num, k));
+//		System.out.println(num.substring(0, num.length()));
 		
 	}
 }
