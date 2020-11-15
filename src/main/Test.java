@@ -2,6 +2,7 @@ package main;
 import java.util.List;
 import java.util.ArrayList;
 import Questions.Q1;
+import Questions.Q1122;
 import Questions.Q127;
 import Questions.Q129;
 import Questions.Q1301;
@@ -169,6 +170,22 @@ public class Test {
 //		System.out.println(q414.thirdMax(nums5));
 		
 //		Q328
-		ListNode head =new ListNode(1);
+//		ListNode head =new ListNode(1);
+		
+//		Q1122
+		
+		Q1122 q1122 = new Q1122();
+		
+		int[] arr1 = {2,3,1,3,2,4,6,7,9,2,19};
+		int[] arr2 = {2,1,4,3,9,6};
+		int[] result = q1122.relativeSortArray1(arr1, arr2);
+//		int[] result = q1122.relativeSortArray2(arr1, arr2);
+		
+		for(int i = 0; i< result.length; i++) {
+			System.out.println(result[i]);
+		}
+		
+		
+		
 	}
 }
