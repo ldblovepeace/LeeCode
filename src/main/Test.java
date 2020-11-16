@@ -10,12 +10,14 @@ import Questions.Q1301;
 import Questions.Q622;
 import Questions.Q941;
 import common.ListNode;
+import common.Sort;
 import common.TreeNode;
 import Questions.Q1365;
 import Questions.Q144;
 import Questions.Q31;
 import Questions.Q349;
 import Questions.Q402;
+import Questions.Q406;
 import Questions.Q414;
 import Questions.Q463;
 import Questions.Q495;
@@ -186,12 +188,35 @@ public class Test {
 //			System.out.println(result[i]);
 //		}
 		
-		String num = "5337";
-		int k = 2;
-		Q402 q402 = new Q402();
-		System.out.println(q402.removeKdigits(num, k));
-		System.out.println(q402.removeKdigits4(num, k));
-//		System.out.println(num.substring(0, num.length()));
+//		String num = "5337";
+//		int k = 2;
+//		Q402 q402 = new Q402();
+//		System.out.println(q402.removeKdigits(num, k));
+//		System.out.println(q402.removeKdigits4(num, k));
+////		System.out.println(num.substring(0, num.length()));
+		
+		
+//		int[] num = {6,5,7,4,3,1,8};
+//		Sort s = new Sort();
+//		s.fastSort(num, 0, num.length-1);
+//		for(int i = 0; i < num.length;i++) {
+//			System.out.println(num[i]);
+//		}
+//		for(int n : num) {
+//			System.out.println(n);
+//		}
+		
+		int[][] num = {{9,0},{7,0},{1,9},{3,0},{2,7},{5,3},{6,0},{3,4},{6,2},{5,2}};
+		Q406 q406 = new Q406();
+		q406.reconstructQueue(num);
+//		q406.fastSort(num, 0, num.length-1);
+		for(int[] n : num) {
+			for(int j : n) {
+				System.out.print(j);
+			}
+			System.out.println();
+		}
+		
 		
 	}
 }
