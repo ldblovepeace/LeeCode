@@ -8,6 +8,7 @@ import Questions.Q129;
 import Questions.Q1301;
 //import Questions.Q1207;
 import Questions.Q622;
+import Questions.Q628;
 import Questions.Q941;
 import common.ListNode;
 import common.Sort;
@@ -206,16 +207,21 @@ public class Test {
 //			System.out.println(n);
 //		}
 		
-		int[][] num = {{9,0},{7,0},{1,9},{3,0},{2,7},{5,3},{6,0},{3,4},{6,2},{5,2}};
-		Q406 q406 = new Q406();
-		q406.reconstructQueue(num);
-//		q406.fastSort(num, 0, num.length-1);
-		for(int[] n : num) {
-			for(int j : n) {
-				System.out.print(j);
-			}
-			System.out.println();
-		}
+//		int[][] num = {{9,0},{7,0},{1,9},{3,0},{2,7},{5,3},{6,0},{3,4},{6,2},{5,2}};
+//		Q406 q406 = new Q406();
+//		q406.reconstructQueue(num);
+////		q406.fastSort(num, 0, num.length-1);
+//		for(int[] n : num) {
+//			for(int j : n) {
+//				System.out.print(j);
+//			}
+//			System.out.println();
+//		}
+		
+//		Q628
+		Q628 q628 = new Q628();
+		int[] nums = {4,2,5,5,6,0};
+		System.out.println(q628.maximumProduct(nums));
 		
 		
 	}
