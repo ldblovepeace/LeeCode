@@ -2,6 +2,7 @@ package main;
 import java.util.List;
 import java.util.ArrayList;
 import Questions.Q1;
+import Questions.Q1030;
 import Questions.Q1122;
 import Questions.Q127;
 import Questions.Q129;
@@ -9,6 +10,7 @@ import Questions.Q1301;
 //import Questions.Q1207;
 import Questions.Q622;
 import Questions.Q628;
+import Questions.Q697;
 import Questions.Q941;
 import common.ListNode;
 import common.Sort;
@@ -219,10 +221,30 @@ public class Test {
 //		}
 		
 //		Q628
-		Q628 q628 = new Q628();
-		int[] nums = {4,2,5,5,6,0};
-		System.out.println(q628.maximumProduct(nums));
+//		Q628 q628 = new Q628();
+//		int[] nums = {4,2,5,5,6,0};
+//		System.out.println(q628.maximumProduct(nums));
+		
+//		Q697 
+//		Q697 q697 = new Q697();
+//		int[] nums = {1,2,2,3,1};
+//		System.out.println(q697.findShortestSubArray(nums));
 		
 		
+//		Q1030
+		Q1030 q1030 = new Q1030();
+		int R = 2;
+		int C = 2;
+		int r0 = 0;
+		int c0 = 1;
+		
+		int[][] res = q1030.allCellsDistOrder(R, C, r0, c0);
+		
+		for(int[] i : res) {
+			for(int j:i) {
+				System.out.print(i[j]);
+			}
+			System.out.println();
+		}
 	}
 }
