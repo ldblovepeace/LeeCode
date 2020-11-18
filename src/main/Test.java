@@ -7,6 +7,7 @@ import Questions.Q1122;
 import Questions.Q127;
 import Questions.Q129;
 import Questions.Q1301;
+import Questions.Q134;
 //import Questions.Q1207;
 import Questions.Q622;
 import Questions.Q628;
@@ -232,19 +233,28 @@ public class Test {
 		
 		
 //		Q1030
-		Q1030 q1030 = new Q1030();
-		int R = 2;
-		int C = 2;
-		int r0 = 0;
-		int c0 = 1;
+//		Q1030 q1030 = new Q1030();
+//		int R = 2;
+//		int C = 2;
+//		int r0 = 0;
+//		int c0 = 1;
+//		
+//		int[][] res = q1030.allCellsDistOrder(R, C, r0, c0);
+//		
+//		for(int[] i : res) {
+//			for(int j:i) {
+//				System.out.print(i[j]);
+//			}
+//			System.out.println();
+//		}
 		
-		int[][] res = q1030.allCellsDistOrder(R, C, r0, c0);
+//		Q134
+		Q134 q134 = new Q134();
+		int[] gas = new int[] {5,1,2,3,4};
+		int[] cost = new int[] {4,4,1,5,1};
 		
-		for(int[] i : res) {
-			for(int j:i) {
-				System.out.print(i[j]);
-			}
-			System.out.println();
-		}
+		System.out.println(q134.canCompleteCircuit(gas, cost));
+		System.out.println(q134.canCompleteCircuit2(gas, cost));
+//		System.out.println(q134.canCompleteCircuit3(gas, cost));
 	}
 }
