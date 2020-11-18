@@ -18,10 +18,12 @@ import common.Sort;
 import common.TreeNode;
 import Questions.Q1365;
 import Questions.Q144;
+import Questions.Q274;
 import Questions.Q31;
 import Questions.Q349;
 import Questions.Q402;
 import Questions.Q406;
+import Questions.Q41;
 import Questions.Q414;
 import Questions.Q463;
 import Questions.Q495;
@@ -249,12 +251,24 @@ public class Test {
 //		}
 		
 //		Q134
-		Q134 q134 = new Q134();
-		int[] gas = new int[] {5,1,2,3,4};
-		int[] cost = new int[] {4,4,1,5,1};
+//		Q134 q134 = new Q134();
+//		int[] gas = new int[] {5,1,2,3,4};
+//		int[] cost = new int[] {4,4,1,5,1};
+//		
+//		System.out.println(q134.canCompleteCircuit(gas, cost));
+//		System.out.println(q134.canCompleteCircuit2(gas, cost));
+////		System.out.println(q134.canCompleteCircuit3(gas, cost));
 		
-		System.out.println(q134.canCompleteCircuit(gas, cost));
-		System.out.println(q134.canCompleteCircuit2(gas, cost));
-//		System.out.println(q134.canCompleteCircuit3(gas, cost));
+//		Q41
+//		Q41 q41 = new Q41();
+//		int[] nums = {5,1,2,3,4};
+//		System.out.println(q41.firstMissingPositive(nums));
+//		System.out.println(q41.firstMissingPositive3(nums));
+		
+//		Q274
+		Q274 q274 = new Q274();
+		int[] citations = {5,1,2,3,4};
+		q274.hIndex(citations);
+
 	}
 }
