@@ -20,4 +20,19 @@ public class Q448 {
 
         return l;
     }
+	
+	public List<Integer> findDisappearedNumbers2(int[] nums) {
+//		数组下标对应位置置负
+        List<Integer> l = new ArrayList<>();
+        for(int i = 0; i< nums.length; i++) {
+        	nums[Math.abs(nums[i])-1] = -Math.abs(nums[Math.abs(nums[i]) - 1]);
+        }
+        for(int i=0; i < nums.length; i++) {
+        	if(nums[i] > 0) {
+        		l.add(i+1);
+        	}
+        }
+
+        return l;
+    }
 }
