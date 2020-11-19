@@ -1,35 +1,7 @@
 package main;
-import java.util.List;
-import java.util.ArrayList;
 
-import Questions.Q100.Q1;
-import Questions.Q100.Q31;
-import Questions.Q100.Q41;
-import Questions.Q1000.Q941;
-import Questions.Q1100.Q1030;
-import Questions.Q1200.Q1122;
-import Questions.Q1400.Q1301;
-import Questions.Q1400.Q1365;
-import Questions.Q200.Q127;
-import Questions.Q200.Q129;
-import Questions.Q200.Q134;
-import Questions.Q200.Q144;
-import Questions.Q300.Q274;
-import Questions.Q300.Q283;
-import Questions.Q400.Q349;
-import Questions.Q500.Q402;
-import Questions.Q500.Q406;
-import Questions.Q500.Q414;
 import Questions.Q500.Q453;
-import Questions.Q500.Q463;
-import Questions.Q500.Q495;
-import Questions.Q600.Q514;
-import Questions.Q700.Q622;
-import Questions.Q700.Q628;
-import Questions.Q700.Q697;
-import common.ListNode;
-import common.Sort;
-import common.TreeNode;
+import Questions.Q700.Q665;
 
 public class Test {
 
@@ -282,9 +254,13 @@ public class Test {
 //			System.out.println(i);
 //		}
 		
-		Q453 q453 = new Q453();
-		int[] nums = new int[] {0,1,0,3,12};
-		System.out.println(q453.minMoves2(nums));
-		System.out.println(q453.minMoves(nums));
+		// Q453 q453 = new Q453();
+		// int[] nums = new int[] {0,1,0,3,12};
+		// System.out.println(q453.minMoves2(nums));
+		// System.out.println(q453.minMoves(nums));
+
+		Q665 q665 = new Q665();
+		int[] nums = new int[]{4,2,1};
+		System.out.println(q665.checkPossibility(nums));
 	}
 }
