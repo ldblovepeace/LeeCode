@@ -14,19 +14,68 @@ public class Q274 {
         // 倒序排列
 		Arrays.sort(tmp,Collections.reverseOrder());
 		
+		int res = 0;
+		
 		for(int i = 0; i< tmp.length; i++) {
-            // 两种类型，第一种是数组内有引用较少的
-			if(tmp[i] < i+1) {
-				return i;
+			if(tmp[i] > res) {
+				res++;
 			}
-            // 第二种，数组内没有引用较少的
-            if(tmp[i] >= i+1 && i == tmp.length -1){
-                return tmp.length;
+            if(tmp[i] <= res){
+                return res;
             }
 		}
 		
-		return 0;
+		return res;
     }
 	
+	public int hIndex2(int[] citations) {
+		Integer[] tmp = new Integer[citations.length];
+		for(int i=0; i<citations.length; i++) {
+			tmp[i] = citations[i];
+		}
+		
+        // 倒序排列
+//		Arrays.sort(tmp,new Comparator<Integer>() {
+//			@Override
+//			public int compare(Integer o1, Integer o2) {
+//				// TODO Auto-generated method stub
+//				return o2-o1;
+//			}
+//			
+//		});
+		
+		Arrays.sort(tmp,(a,b)->b-a);
+		
+		
+		int res = 0;
+		
+		for(int i = 0; i< tmp.length; i++) {
+			if(tmp[i] > res) {
+				res++;
+			}
+            if(tmp[i] <= res){
+                return res;
+            }
+		}
+		
+		return res;
+    }
 	
+	public int hIndex3(int[] citations) {
+		int res = 0;
+		Arrays.sort(citations);
+		
+		for(int i = citations.length-1; i>=0; i--) {
+			if(citations[i] > res) {
+				res++;
+			}
+            if(citations[i] <= res){
+                return res;
+            }
+		}
+		
+		return res;
+    }
+
+		
 }

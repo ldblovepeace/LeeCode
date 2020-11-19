@@ -267,8 +267,10 @@ public class Test {
 		
 //		Q274
 		Q274 q274 = new Q274();
-		int[] citations = {5,1,2,3,4};
-		q274.hIndex(citations);
+		int[] citations = {1,1};
+
+		System.out.println(q274.hIndex(citations));
+		System.out.println(q274.hIndex3(citations));
 
 	}
 }
