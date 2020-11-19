@@ -26,6 +26,7 @@ import Questions.Q402;
 import Questions.Q406;
 import Questions.Q41;
 import Questions.Q414;
+import Questions.Q453;
 import Questions.Q463;
 import Questions.Q495;
 import Questions.Q514;
@@ -273,12 +274,17 @@ public class Test {
 //		System.out.println(q274.hIndex(citations));
 //		System.out.println(q274.hIndex3(citations));
 
-		Q283 q283 = new Q283();
-		int[] nums = new int[] {0,1,0,3,12};
+//		Q283 q283 = new Q283();
+//		int[] nums = new int[] {0,1,0,3,12};
+//		
+//		q283.moveZeroes(nums);
+//		for(int i:nums) {
+//			System.out.println(i);
+//		}
 		
-		q283.moveZeroes(nums);
-		for(int i:nums) {
-			System.out.println(i);
-		}
+		Q453 q453 = new Q453();
+		int[] nums = new int[] {0,1,0,3,12};
+		System.out.println(q453.minMoves2(nums));
+		System.out.println(q453.minMoves(nums));
 	}
 }
