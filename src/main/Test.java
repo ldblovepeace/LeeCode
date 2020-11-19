@@ -19,6 +19,7 @@ import common.TreeNode;
 import Questions.Q1365;
 import Questions.Q144;
 import Questions.Q274;
+import Questions.Q283;
 import Questions.Q31;
 import Questions.Q349;
 import Questions.Q402;
@@ -266,11 +267,18 @@ public class Test {
 //		System.out.println(q41.firstMissingPositive3(nums));
 		
 //		Q274
-		Q274 q274 = new Q274();
-		int[] citations = {1,1};
+//		Q274 q274 = new Q274();
+//		int[] citations = {1,1};
+//
+//		System.out.println(q274.hIndex(citations));
+//		System.out.println(q274.hIndex3(citations));
 
-		System.out.println(q274.hIndex(citations));
-		System.out.println(q274.hIndex3(citations));
-
+		Q283 q283 = new Q283();
+		int[] nums = new int[] {0,1,0,3,12};
+		
+		q283.moveZeroes(nums);
+		for(int i:nums) {
+			System.out.println(i);
+		}
 	}
 }
