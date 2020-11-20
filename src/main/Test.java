@@ -3,6 +3,7 @@ package main;
 import java.util.List;
 
 import Questions.Q200.Q118;
+import Questions.Q200.Q119;
 import Questions.Q200.Q147;
 import Questions.Q500.Q453;
 import Questions.Q700.Q665;
@@ -286,14 +287,21 @@ public class Test {
 //		}
 //		System.out.println(index.val);
 		
-		Q118 q118 = new Q118();
-		int numRows = 5;
-		List<List<Integer>> res = q118.generate(numRows);
-		for(List<Integer> i : res) {
-			for(int j : i) {
-				System.out.print(j);
-			}
-			System.out.println();
+//		Q118 q118 = new Q118();
+//		int numRows = 5;
+//		List<List<Integer>> res = q118.generate(numRows);
+//		for(List<Integer> i : res) {
+//			for(int j : i) {
+//				System.out.print(j);
+//			}
+//			System.out.println();
+//		}
+		
+		Q119 q119 = new Q119();
+		int rowIndex = 6;
+		List<Integer> l = q119.getRow(rowIndex);
+		for(int i:l) {
+			System.out.print(i);
 		}
 	}
 }
