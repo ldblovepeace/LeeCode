@@ -1,5 +1,8 @@
 package main;
 
+import java.util.List;
+
+import Questions.Q200.Q118;
 import Questions.Q200.Q147;
 import Questions.Q500.Q453;
 import Questions.Q700.Q665;
@@ -267,20 +270,30 @@ public class Test {
 //		System.out.println(q665.checkPossibility(nums1));
 //		System.out.println(q665.checkPossibility2(nums1));
 		
-		Q147 q147 = new Q147();
-		ListNode head = new ListNode(4);
-		head.next = new ListNode(2);
-		head.next.next = new ListNode(1);
-		head.next.next.next = new ListNode(3);
+//		Q147 q147 = new Q147();
+//		ListNode head = new ListNode(4);
+//		head.next = new ListNode(2);
+//		head.next.next = new ListNode(1);
+//		head.next.next.next = new ListNode(3);
+//		
+//		
+//		
+//		ListNode index = q147.insertionSortList(head);;
+//		
+//		while(index.next != null) {
+//			System.out.println(index.val);
+//			index = index.next;
+//		}
+//		System.out.println(index.val);
 		
-		
-		
-		ListNode index = q147.insertionSortList(head);;
-		
-		while(index.next != null) {
-			System.out.println(index.val);
-			index = index.next;
+		Q118 q118 = new Q118();
+		int numRows = 5;
+		List<List<Integer>> res = q118.generate(numRows);
+		for(List<Integer> i : res) {
+			for(int j : i) {
+				System.out.print(j);
+			}
+			System.out.println();
 		}
-		System.out.println(index.val);
 	}
 }
