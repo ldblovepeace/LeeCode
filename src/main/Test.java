@@ -6,6 +6,7 @@ import Questions.Q200.Q118;
 import Questions.Q200.Q119;
 import Questions.Q200.Q147;
 import Questions.Q500.Q453;
+import Questions.Q700.Q661;
 import Questions.Q700.Q665;
 import common.ListNode;
 
@@ -297,11 +298,20 @@ public class Test {
 //			System.out.println();
 //		}
 		
-		Q119 q119 = new Q119();
-		int rowIndex = 6;
-		List<Integer> l = q119.getRow(rowIndex);
-		for(int i:l) {
-			System.out.print(i);
-		}
+//		Q119 q119 = new Q119();
+//		int rowIndex = 6;
+//		List<Integer> l = q119.getRow(rowIndex);
+//		for(int i:l) {
+//			System.out.print(i);
+//		}
+	    
+	    Q661 q661 = new Q661();
+	    int[][] M = new int[][] {{1,1,1},{1,0,1},{1,1,1}};
+	    int[][] res = q661.imageSmoother(M);
+	    for(int i = 0; i < res.length; i++) {
+	        for(int j:res[i]) {
+	            System.out.println(j);
+	        }
+	    }
 	}
 }
