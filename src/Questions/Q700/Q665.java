@@ -36,6 +36,40 @@ public class Q665 {
         return true;
     }
 
+    public boolean checkPossibility2(int[] nums) {
+//    	比较n+1和n-1的大小
+    	
+    	int n = nums.length;
+    	
+    	for(int i = 0; i < n-1; i++) {
+    		if(nums[i] > nums[i+1]) {
+    			if(i == 0) {
+    				nums[i] = nums[i+1];
+    				break;
+    			}
+    			if(i == n-2) {
+    				nums[i+1] = nums[i];
+    				break;
+    			}
+    			if(nums[i-1] <= nums[i+1]) {
+    				nums[i] = nums[i+1];
+    				break;
+    			}
+    			if(nums[i-1] > nums[i+1]) {
+    				nums[i+1] = nums[i];
+    				break;
+    			}
+    		}
+    	}
+    	
+    	for(int i = 0; i < n-1; i++) {
+    		if(nums[i] > nums[i+1]) {
+    			return false;
+    		}
+    	}
+    	
+        return true;
+    }
 
     
 }

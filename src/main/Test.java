@@ -260,7 +260,9 @@ public class Test {
 		// System.out.println(q453.minMoves(nums));
 
 		Q665 q665 = new Q665();
-		int[] nums = new int[]{4,2,1};
-		System.out.println(q665.checkPossibility(nums));
+		int[] nums = new int[]{5,7,6,10};
+		int[] nums1 = new int[]{1,4,1,2};
+		System.out.println(q665.checkPossibility(nums1));
+		System.out.println(q665.checkPossibility2(nums1));
 	}
 }
