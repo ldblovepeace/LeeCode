@@ -1,7 +1,9 @@
 package main;
 
+import Questions.Q200.Q147;
 import Questions.Q500.Q453;
 import Questions.Q700.Q665;
+import common.ListNode;
 
 public class Test {
 
@@ -259,10 +261,26 @@ public class Test {
 		// System.out.println(q453.minMoves2(nums));
 		// System.out.println(q453.minMoves(nums));
 
-		Q665 q665 = new Q665();
-		int[] nums = new int[]{5,7,6,10};
-		int[] nums1 = new int[]{1,4,1,2};
-		System.out.println(q665.checkPossibility(nums1));
-		System.out.println(q665.checkPossibility2(nums1));
+//		Q665 q665 = new Q665();
+//		int[] nums = new int[]{5,7,6,10};
+//		int[] nums1 = new int[]{1,4,1,2};
+//		System.out.println(q665.checkPossibility(nums1));
+//		System.out.println(q665.checkPossibility2(nums1));
+		
+		Q147 q147 = new Q147();
+		ListNode head = new ListNode(4);
+		head.next = new ListNode(2);
+		head.next.next = new ListNode(1);
+		head.next.next.next = new ListNode(3);
+		
+		
+		
+		ListNode index = q147.insertionSortList(head);;
+		
+		while(index.next != null) {
+			System.out.println(index.val);
+			index = index.next;
+		}
+		System.out.println(index.val);
 	}
 }
