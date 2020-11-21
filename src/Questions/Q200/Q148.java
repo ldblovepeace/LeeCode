@@ -67,14 +67,6 @@ public class Q148 {
         ListNode leftIndex = left;
         ListNode rightIndex = right;
         
-        if(left == null) {
-            return right;
-        }
-        
-        if(right == null) {
-            return left;
-        }
-        
         
         ListNode index = head;
         
