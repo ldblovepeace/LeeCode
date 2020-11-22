@@ -8,6 +8,7 @@ import Questions.Q200.Q147;
 import Questions.Q200.Q148;
 import Questions.Q300.Q242;
 import Questions.Q500.Q453;
+import Questions.Q600.Q598;
 import Questions.Q700.Q661;
 import Questions.Q700.Q665;
 import common.ListNode;
@@ -329,10 +330,17 @@ public class Test {
 // 	    }
 // 	    System.out.print(print.val);
 
-		Q242 q242 = new Q242();
-		String s = "anagram";		;
-		String t = "nagaraa";
-		System.out.print(q242.isAnagram(s, t));
-		System.out.print(q242.isAnagram3(s, t));
+		// Q242 q242 = new Q242();
+		// String s = "anagram";		;
+		// String t = "nagaraa";
+		// System.out.print(q242.isAnagram(s, t));
+		// System.out.print(q242.isAnagram3(s, t));
+
+		Q598 q598 = new Q598();
+		int m = 5;
+		int n = 3;
+		int[][] ops = {{2,3},{3,3}};
+		int res =q598.maxCount(m, n, ops);
+		System.out.println(res);
 	}
 }
