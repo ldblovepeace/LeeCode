@@ -7,6 +7,7 @@ import Questions.Q200.Q119;
 import Questions.Q200.Q147;
 import Questions.Q200.Q148;
 import Questions.Q300.Q242;
+import Questions.Q500.Q452;
 import Questions.Q500.Q453;
 import Questions.Q600.Q598;
 import Questions.Q700.Q661;
@@ -336,11 +337,20 @@ public class Test {
 		// System.out.print(q242.isAnagram(s, t));
 		// System.out.print(q242.isAnagram3(s, t));
 
-		Q598 q598 = new Q598();
-		int m = 5;
-		int n = 3;
-		int[][] ops = {{2,3},{3,3}};
-		int res =q598.maxCount(m, n, ops);
-		System.out.println(res);
+//		Q598 q598 = new Q598();
+//		int m = 5;
+//		int n = 3;
+//		int[][] ops = {{2,3},{3,3}};
+//		int res =q598.maxCount(m, n, ops);
+//		System.out.println(res);
+	    
+	    Q452 q452 = new Q452();
+	    int[][] points = {{3,9},{7,12},{3,8},{6,8},{9,10},{2,9},{0,9},{3,9},{0,6},{2,8}};
+	    int res = q452.findMinArrowShots(points);
+	    System.out.println(res);
+	    
+	    int x = 10;
+	    int y = 5;
+	    System.out.print(Integer.compare(x, y));
 	}
 }
