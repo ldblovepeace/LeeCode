@@ -385,10 +385,10 @@ public class Test {
 //	    System.out.println(res);
 	    
 	    Q54 q54 = new Q54();
-	    int nums[][] = new int[][] {{1,2,3},{4,5,6},{7,8,9}};
-	    List<Integer> res = q54.rotate(nums);
+	    int matrix[][] = new int[][] {{1,2,3,4},{4,5,6,7},{7,8,9,10}};
+	    List<Integer> res = q54.spiralOrder(matrix);
 	    for(int i:res) {
-	        System.out.print(i);
+	        System.out.println(i);
 	    }
 	}
 }
