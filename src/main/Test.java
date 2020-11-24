@@ -6,6 +6,8 @@ import Questions.Q200.Q118;
 import Questions.Q200.Q119;
 import Questions.Q200.Q147;
 import Questions.Q200.Q148;
+import Questions.Q200.Q189;
+import Questions.Q300.Q222;
 import Questions.Q300.Q242;
 import Questions.Q500.Q452;
 import Questions.Q500.Q453;
@@ -13,6 +15,7 @@ import Questions.Q600.Q598;
 import Questions.Q700.Q661;
 import Questions.Q700.Q665;
 import common.ListNode;
+import common.TreeNode;
 
 public class Test {
 
@@ -344,13 +347,34 @@ public class Test {
 //		int res =q598.maxCount(m, n, ops);
 //		System.out.println(res);
 	    
-	    Q452 q452 = new Q452();
-	    int[][] points = {{3,9},{7,12},{3,8},{6,8},{9,10},{2,9},{0,9},{3,9},{0,6},{2,8}};
-	    int res = q452.findMinArrowShots(points);
-	    System.out.println(res);
+//	    Q452 q452 = new Q452();
+//	    int[][] points = {{3,9},{7,12},{3,8},{6,8},{9,10},{2,9},{0,9},{3,9},{0,6},{2,8}};
+//	    int res = q452.findMinArrowShots(points);
+//	    System.out.println(res);
+//	    
+//	    int x = 10;
+//	    int y = 5;
+//	    System.out.print(Integer.compare(x, y));
 	    
-	    int x = 10;
-	    int y = 5;
-	    System.out.print(Integer.compare(x, y));
+//	    Q189 q189 = new Q189();
+//	    int[] nums = new int[] {1,2,3,4,5,6};
+//	    int k = 3;
+//	    q189.rotate(nums, k);
+//	    for(int i:nums) {
+//	        System.out.println(i);
+//	    }
+	    
+	    Q222 q222 = new Q222();
+	    TreeNode root = new TreeNode(1);
+	    root.left = new TreeNode(2);
+	    root.right = new TreeNode (3);
+	    root.left.left = new TreeNode(4);
+	    root.left.right = new TreeNode(5);
+	    root.right.left = new TreeNode(6);
+	    
+	    int res1 = q222.countNodes1(root);
+	    int res2 = q222.countNodes2(root);
+	    System.out.println(res1);
+	    System.out.println(res2);
 	}
 }
