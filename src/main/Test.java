@@ -2,6 +2,7 @@ package main;
 
 import java.util.List;
 
+import Questions.Q100.Q54;
 import Questions.Q200.Q118;
 import Questions.Q200.Q119;
 import Questions.Q200.Q147;
@@ -9,6 +10,7 @@ import Questions.Q200.Q148;
 import Questions.Q200.Q189;
 import Questions.Q300.Q222;
 import Questions.Q300.Q242;
+import Questions.Q400.Q396;
 import Questions.Q500.Q452;
 import Questions.Q500.Q453;
 import Questions.Q600.Q598;
@@ -358,23 +360,35 @@ public class Test {
 	    
 //	    Q189 q189 = new Q189();
 //	    int[] nums = new int[] {1,2,3,4,5,6};
-//	    int k = 3;
-//	    q189.rotate(nums, k);
+//	    int k = 2;
+//	    q189.rotate2(nums, k);
 //	    for(int i:nums) {
 //	        System.out.println(i);
 //	    }
 	    
-	    Q222 q222 = new Q222();
-	    TreeNode root = new TreeNode(1);
-	    root.left = new TreeNode(2);
-	    root.right = new TreeNode (3);
-	    root.left.left = new TreeNode(4);
-	    root.left.right = new TreeNode(5);
-	    root.right.left = new TreeNode(6);
+//	    Q222 q222 = new Q222();
+//	    TreeNode root = new TreeNode(1);
+//	    root.left = new TreeNode(2);
+//	    root.right = new TreeNode (3);
+//	    root.left.left = new TreeNode(4);
+//	    root.left.right = new TreeNode(5);
+//	    root.right.left = new TreeNode(6);
+//	    
+//	    int res1 = q222.countNodes1(root);
+//	    int res2 = q222.countNodes2(root);
+//	    System.out.println(res1);
+//	    System.out.println(res2);
 	    
-	    int res1 = q222.countNodes1(root);
-	    int res2 = q222.countNodes2(root);
-	    System.out.println(res1);
-	    System.out.println(res2);
+//	    Q396 q396 = new Q396();
+//	    int[] A = new int[] {4,3,2,6};
+//	    int res = q396.maxRotateFunction2(A);
+//	    System.out.println(res);
+	    
+	    Q54 q54 = new Q54();
+	    int nums[][] = new int[][] {{1,2,3},{4,5,6},{7,8,9}};
+	    List<Integer> res = q54.rotate(nums);
+	    for(int i:res) {
+	        System.out.print(i);
+	    }
 	}
 }
