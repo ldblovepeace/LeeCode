@@ -3,6 +3,8 @@ package main;
 import java.util.List;
 
 import Questions.Q100.Q54;
+import Questions.Q100.Q59;
+import Questions.Q1400.Q1370;
 import Questions.Q200.Q118;
 import Questions.Q200.Q119;
 import Questions.Q200.Q147;
@@ -384,11 +386,26 @@ public class Test {
 //	    int res = q396.maxRotateFunction2(A);
 //	    System.out.println(res);
 	    
-	    Q54 q54 = new Q54();
-	    int matrix[][] = new int[][] {{1,2,3,4},{4,5,6,7},{7,8,9,10}};
-	    List<Integer> res = q54.spiralOrder(matrix);
-	    for(int i:res) {
-	        System.out.println(i);
+//	    Q54 q54 = new Q54();
+//	    int matrix[][] = new int[][] {{1,2,3,4},{4,5,6,7},{7,8,9,10}};
+//	    List<Integer> res = q54.spiralOrder(matrix);
+//	    for(int i:res) {
+//	        System.out.println(i);
+//	    }
+	    
+//	    Q1370 q1370 = new Q1370();
+//	    String s = "abcabcabc";
+//	    String res = q1370.sortString(s);
+//	    System.out.println(res);
+	    
+	    Q59 q59 = new Q59();
+	    int n = 3;
+	    int[][] res = q59.generateMatrix(n);
+	    for(int[] i:res) {
+	        for(int j:i) {
+	            System.out.print(j);
+	        }
+	        System.out.println();
 	    }
 	}
 }
