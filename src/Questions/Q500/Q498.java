@@ -1,6 +1,54 @@
 package Questions.Q500;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Q498 {
+    public int[] findDiagonalOrder1(int[][] matrix) {
+        int row = matrix.length;
+        if(row == 0) {
+            return new int[0];
+        }
+        
+        int col = matrix[0].length;
+        int[] res = new int[row*col];
+//        res记录结果
+        int n = 0;
+        List<Integer> l = new ArrayList<>();
+//        l记录边界位置
+        for(int i = 0; i< row; i++) {
+            int r = i;
+            for(int j = 0; j < i+1 && j< col; j++) {
+                res[n] = matrix[r][j];
+                n++;
+                r--;
+            }
+            l.add(n-1);
+        }
+        
+        for(int j = 1; j < col; j++) {
+            int c = j;
+            for(int i = row-1; i>0 && c<col; i--) {
+                res[n] = matrix[i][c];
+                n++;
+                c++;
+            }
+            l.add(n-1);
+        }
+                
+        return res;
+    }
+    
+    public void reverse(int[] nums, int start, int end) {
+        while(start < end) {
+            int tmp = nums[start];
+            nums[start] = nums[end];
+            nums[end] = tmp;
+            start++;
+            tmp--;
+        }
+    }
+    
     public int[] findDiagonalOrder(int[][] matrix) {
         
         if(matrix.length == 0){

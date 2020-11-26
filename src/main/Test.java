@@ -418,9 +418,9 @@ public class Test {
 //	    System.out.println(res2);
 	    
 	    Q498 q498 = new Q498();
-//	    int[][] matrix = new int[][] {{1,2,3,4},{4,5,6,7},{7,8,9,10}};
-	    int[][] matrix = new int[][] {{1,2,3},{4,5,6},{7,8,9}};
-	    int[] res = q498.findDiagonalOrder(matrix);
+	    int[][] matrix = new int[][] {{1,2,3,4},{4,5,6,7},{7,8,9,10}};
+//	    int[][] matrix = new int[][] {{1,2,3},{4,5,6},{7,8,9}};
+	    int[] res = q498.findDiagonalOrder1(matrix);
 	    for(int i:res) {
 	        System.out.println(i);
 	    }
