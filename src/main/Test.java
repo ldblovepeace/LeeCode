@@ -9,6 +9,7 @@ import Questions.Q200.Q118;
 import Questions.Q200.Q119;
 import Questions.Q200.Q147;
 import Questions.Q200.Q148;
+import Questions.Q200.Q164;
 import Questions.Q200.Q189;
 import Questions.Q300.Q222;
 import Questions.Q300.Q242;
@@ -398,14 +399,21 @@ public class Test {
 //	    String res = q1370.sortString(s);
 //	    System.out.println(res);
 	    
-	    Q59 q59 = new Q59();
-	    int n = 3;
-	    int[][] res = q59.generateMatrix(n);
-	    for(int[] i:res) {
-	        for(int j:i) {
-	            System.out.print(j);
-	        }
-	        System.out.println();
-	    }
+//	    Q59 q59 = new Q59();
+//	    int n = 3;
+//	    int[][] res = q59.generateMatrix(n);
+//	    for(int[] i:res) {
+//	        for(int j:i) {
+//	            System.out.print(j);
+//	        }
+//	        System.out.println();
+//	    }
+	    
+	    Q164 q164 = new Q164();
+	    int[] nums = new int[] {3,4,5,2,42,535,2,4,68,8,43,2,12};
+	    int res1 = q164.maximumGap1(nums);
+	    int res2 = q164.maximumGap1(nums);
+	    System.out.println(res1);
+	    System.out.println(res2);
 	}
 }
