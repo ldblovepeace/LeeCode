@@ -16,6 +16,7 @@ import Questions.Q300.Q242;
 import Questions.Q400.Q396;
 import Questions.Q500.Q452;
 import Questions.Q500.Q453;
+import Questions.Q500.Q498;
 import Questions.Q600.Q598;
 import Questions.Q700.Q661;
 import Questions.Q700.Q665;
@@ -409,11 +410,19 @@ public class Test {
 //	        System.out.println();
 //	    }
 	    
-	    Q164 q164 = new Q164();
-	    int[] nums = new int[] {3,4,5,2,42,535,2,4,68,8,43,2,12};
-	    int res1 = q164.maximumGap1(nums);
-	    int res2 = q164.maximumGap1(nums);
-	    System.out.println(res1);
-	    System.out.println(res2);
+//	    Q164 q164 = new Q164();
+//	    int[] nums = new int[] {3,4,5,2,42,535,2,4,68,8,43,2,12};
+//	    int res1 = q164.maximumGap1(nums);
+//	    int res2 = q164.maximumGap1(nums);
+//	    System.out.println(res1);
+//	    System.out.println(res2);
+	    
+	    Q498 q498 = new Q498();
+//	    int[][] matrix = new int[][] {{1,2,3,4},{4,5,6,7},{7,8,9,10}};
+	    int[][] matrix = new int[][] {{1,2,3},{4,5,6},{7,8,9}};
+	    int[] res = q498.findDiagonalOrder(matrix);
+	    for(int i:res) {
+	        System.out.println(i);
+	    }
 	}
 }
