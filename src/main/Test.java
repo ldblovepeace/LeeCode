@@ -14,6 +14,7 @@ import Questions.Q200.Q189;
 import Questions.Q300.Q222;
 import Questions.Q300.Q242;
 import Questions.Q400.Q396;
+import Questions.Q400.Q493;
 import Questions.Q500.Q452;
 import Questions.Q500.Q453;
 import Questions.Q500.Q454;
@@ -22,6 +23,7 @@ import Questions.Q600.Q566;
 import Questions.Q600.Q598;
 import Questions.Q700.Q661;
 import Questions.Q700.Q665;
+import Questions.Q800.Q767;
 import common.ListNode;
 import common.TreeNode;
 
@@ -437,16 +439,27 @@ public class Test {
 //	    int res = q454.fourSumCount1(A, B, C, D);
 //	    System.out.println(res);
 	    
-	    Q566 q566 = new Q566();
-	    int[][] nums = new int[][] {{1,2},{3,4}};
-	    int r = 1;
-	    int c = 4;
-	    int[][] res = q566.matrixReshape(nums, r, c);
-	    for(int[] i : res) {
-	        for(int j:i) {
-	            System.out.print(j);
-	        }
-	        System.out.println();
-	    }
+//	    Q566 q566 = new Q566();
+//	    int[][] nums = new int[][] {{1,2},{3,4}};
+//	    int r = 1;
+//	    int c = 4;
+//	    int[][] res = q566.matrixReshape(nums, r, c);
+//	    for(int[] i : res) {
+//	        for(int j:i) {
+//	            System.out.print(j);
+//	        }
+//	        System.out.println();
+//	    }
+	    
+//	    Q493 q493 = new Q493();
+//	    int[] nums = new int[] {2147483647,2147483647,2147483647,2147483647,2147483647,2147483647};
+//	    int res = q493.reversePairs(nums);
+//	    System.out.println(res);
+	    
+	    Q767 q767 = new Q767();
+	    String S = "snnnnbpngobwznvnnnlnwhvnnnnfjnnlnnnnnnbnknnqkndzefncknnnnnaiqrntnndnnnjninnnunnunqhndnnqnnsjqnnpiqshntnnncnvnnnncnnqenlnninyndnnnljongnnjwnnnngllnnngkbnllnnnnontlbpngjnnenqnsnnnnnjeqqghnfpngepnodnnnnnnvnsrnughbnipvnhqmnzonoonnnjotnnonoennnpnfnnkdnnbmnmnpnqninnxronnnnvnlanlnnnebnnnlnvnfknsnbincnttnmnguqenhnnxunnnntnnnnhnqnzehvunfnvnndvnjnnnbnnpxnqipwnmnonnndlnsnonnninnxnnnjnnnnnesennmyiednnnnnnnnnhimtnnnonjlicnwnwvnntaxmnrntnnnnsnbnanninnecbcfjxncnnkvnnqgnunensanpnngjnzxjnopnnyvnnxskniyytnsnnnnx";
+//	    String S = "tndsewnllhrtwsvxenkscbivijfqnysamckzoyfnapuotmdexzkkrpmppttficzerdndssuveompqkemtbwbodrhwsfpbmkafpwyedpcowruntvymxtyyejqtajkcjakghtdwmuygecjncxzcxezgecrxonnszmqmecgvqqkdagvaaucewelchsmebikscciegzoiamovdojrmmwgbxeygibxxltemfgpogjkhobmhwquizuwvhfaiavsxhiknysdghcawcrphaykyashchyomklvghkyabxatmrkmrfsppfhgrwywtlxebgzmevefcqquvhvgounldxkdzndwybxhtycmlybhaaqvodntsvfhwcuhvuccwcsxelafyzushjhfyklvghpfvknprfouevsxmcuhiiiewcluehpmzrjzffnrptwbuhnyahrbzqvirvmffbxvrmynfcnupnukayjghpusewdwrbkhvjnveuiionefmnfxao";
+	    String res = q767.reorganizeString(S);
+	    System.out.println(res);
 	}
 }
