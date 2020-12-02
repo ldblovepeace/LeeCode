@@ -14,6 +14,7 @@ import Questions.Q200.Q164;
 import Questions.Q200.Q189;
 import Questions.Q300.Q222;
 import Questions.Q300.Q242;
+import Questions.Q400.Q321;
 import Questions.Q400.Q396;
 import Questions.Q400.Q493;
 import Questions.Q500.Q452;
@@ -463,12 +464,21 @@ public class Test {
 //	    String res = q767.reorganizeString(S);
 //	    System.out.println(res);
 	    
-	    Q34 q34 = new Q34();
-	    int[] nums = new int[] {5,6,7,9,10};
-	    int target = 8;
-	    int[] res = q34.searchRange(nums, target);
-	    for(int i:res) {
-	        System.out.println(i);
-	    }
+//	    Q34 q34 = new Q34();
+//	    int[] nums = new int[] {5,6,7,9,10};
+//	    int target = 8;
+//	    int[] res = q34.searchRange(nums, target);
+//	    for(int i:res) {
+//	        System.out.println(i);
+//	    }
+	    
+	    Q321 q321 = new Q321();
+	    int[] nums1 = new int[] {3,4,6,5};
+	    int[] nums2 = new int[] {9,1,2,5,8,3};
+	    int k = 4;
+	    int res = q321.maxInt(nums2, k);
+	    
+	        System.out.println(res);
+	    
 	}
 }
