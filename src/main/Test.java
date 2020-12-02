@@ -476,9 +476,10 @@ public class Test {
 	    int[] nums1 = new int[] {3,4,6,5};
 	    int[] nums2 = new int[] {9,1,2,5,8,3};
 	    int k = 4;
-	    int res = q321.maxInt(nums2, k);
-	    
-	        System.out.println(res);
+	    int[] res = q321.maxNumber(nums1, nums2, k);
+	    for(int i:res){
+	        System.out.println(i);
+		}
 	    
 	}
 }
