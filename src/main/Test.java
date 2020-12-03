@@ -12,6 +12,7 @@ import Questions.Q200.Q147;
 import Questions.Q200.Q148;
 import Questions.Q200.Q164;
 import Questions.Q200.Q189;
+import Questions.Q300.Q204;
 import Questions.Q300.Q222;
 import Questions.Q300.Q242;
 import Questions.Q400.Q321;
@@ -472,13 +473,40 @@ public class Test {
 //	        System.out.println(i);
 //	    }
 	    
-	    Q321 q321 = new Q321();
-	    int[] nums1 = new int[] {3,4,6,5};
-	    int[] nums2 = new int[] {9,1,2,5,8,3};
-	    int k = 4;
-	    int res = q321.maxInt(nums2, k);
+//	    Q321 q321 = new Q321();
+//	    int[] nums1 = new int[] {3,4,6,5};
+//	    int[] nums2 = new int[] {9,1,2,5,8,3};
+//	    int k = 4;
+//	    int res = q321.maxInt(nums2, k);
+//	    
+//	        System.out.println(res);
 	    
-	        System.out.println(res);
+//	    Q204 q204 = new Q204();
+////	    int res1 = q204.countPrimes(500);
+//	    int res2 = q204.countPrimes1(500000);
+////	    System.out.println(res1);
+//	    System.out.println(res2);
 	    
+//        System.out.println(Integer.valueOf("1011",2).toString());
+//	    String s = "10.0.3.193";
+//	    String[] ip = s.split("\\.");
+//	    for(String i:ip) {
+//	        System.out.println(i);
+//	    }
+
+//	    System.out.println(10<<8*3);
+//	    System.out.println(3<<8*1);
+//	    System.out.println(193<<8*0);
+//	    int res = 0;
+//	    res = res + 10<<8*3;
+//	    res = res + 3<<8*1;
+//	    res = res + 193<<8*0;
+//	    System.out.println(167772160+ 961);
+	    
+	    int ip = 167773121;
+	    ip = ip >> 8*2;
+	    String res = "10.0.3.193.";
+
+	    System.out.println(ip);
 	}
 }
