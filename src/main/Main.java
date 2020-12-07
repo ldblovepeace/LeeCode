@@ -17,11 +17,14 @@ public class Main{
                 }
                 System.out.println(res);
             }else{
-                
-//                 for(int i = 0; i<4; i++){
-//                     Integer.valueOf(Integer.parseInt(s)>>8*i,"2") ;
-//                 }
-                System.out.println();
+                int tmp = Integer.parseInt(s);
+                String res = "";
+                for(int i = 0; i<4; i++){
+                    res = res + (tmp>>(8*(3-i))) +".";
+                    int t = (tmp>>(8*(3-i)))*(int)Math.pow(2,8*(3-i));
+                    tmp = tmp-t;
+                }
+                System.out.println(res.substring(0,res.length()-1));
             }
         }
     }
