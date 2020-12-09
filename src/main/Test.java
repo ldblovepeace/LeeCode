@@ -16,7 +16,9 @@ import Questions.Q200.Q164;
 import Questions.Q200.Q189;
 import Questions.Q300.Q204;
 import Questions.Q300.Q222;
+import Questions.Q300.Q238;
 import Questions.Q300.Q242;
+import Questions.Q400.Q304;
 import Questions.Q400.Q321;
 import Questions.Q400.Q396;
 import Questions.Q400.Q493;
@@ -24,6 +26,7 @@ import Questions.Q500.Q452;
 import Questions.Q500.Q453;
 import Questions.Q500.Q454;
 import Questions.Q500.Q498;
+import Questions.Q600.Q520;
 import Questions.Q600.Q566;
 import Questions.Q600.Q598;
 import Questions.Q700.Q659;
@@ -581,14 +584,32 @@ public class Test {
 //	    int res = q62.uniquePaths(m, n);
 //	    System.out.println(res);
 //	    
-	    Q73 q73 = new Q73();
-	    int[][] matrix = new int[][] {{0,1,2,0},{3,4,5,2},{1,3,1,5}};
-	    q73.setZeroes(matrix);
-	    for(int i=0; i<matrix.length; i++) {
-	        for(int j=0; j<matrix[0].length; j++) {
-	            System.out.print(matrix[i][j]);
-	        }
-	        System.out.println();
-	    }
+//	    Q73 q73 = new Q73();
+//	    int[][] matrix = new int[][] {{0,1,2,0},{3,4,5,2},{1,3,1,5}};
+//	    q73.setZeroes(matrix);
+//	    for(int i=0; i<matrix.length; i++) {
+//	        for(int j=0; j<matrix[0].length; j++) {
+//	            System.out.print(matrix[i][j]);
+//	        }
+//	        System.out.println();
+//	    }
+	    
+//	    int[][] matrix = new int[][] {{3,0,1,4,2},{5,6,3,2,1},{1,2,0,1,5},{4,1,0,1,7},{1,0,3,0,5}};
+//	    Q304 q304 = new Q304(matrix);
+//	    System.out.println(q304.sumRegion(0,1,2,4));
+//	    int[][] matrix = new int[][] {{-4,-5}};
+//        Q304 q304 = new Q304(matrix);
+//        System.out.println(q304.sumRegion(0,1,0,1));
+	    
+//	    Q238 q238 = new Q238();
+//	    int[] nums = new int[] {1,2,3,4};
+//	    q238.productExceptSelf1(nums);
+	    
+	    Q520 q520 = new Q520();
+	    String word = "mL";
+	    q520.detectCapitalUse(word);
+	    System.out.println('z'-'A');
+	    System.out.println('a'-'Z');
+	    System.out.println('Z'-'a');
 	}
 }
