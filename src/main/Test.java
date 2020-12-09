@@ -6,6 +6,7 @@ import Questions.Q100.Q34;
 import Questions.Q100.Q54;
 import Questions.Q100.Q59;
 import Questions.Q100.Q62;
+import Questions.Q100.Q73;
 import Questions.Q1400.Q1370;
 import Questions.Q200.Q118;
 import Questions.Q200.Q119;
@@ -574,11 +575,20 @@ public class Test {
 //	            System.out.print(';');
 //	        }
 //	    }
-	    Q62 q62 = new Q62();
-	    int m = 3;
-	    int n = 4;
-	    int res = q62.uniquePaths(m, n);
-	    System.out.println(res);
-	    
+//	    Q62 q62 = new Q62();
+//	    int m = 3;
+//	    int n = 4;
+//	    int res = q62.uniquePaths(m, n);
+//	    System.out.println(res);
+//	    
+	    Q73 q73 = new Q73();
+	    int[][] matrix = new int[][] {{0,1,2,0},{3,4,5,2},{1,3,1,5}};
+	    q73.setZeroes(matrix);
+	    for(int i=0; i<matrix.length; i++) {
+	        for(int j=0; j<matrix[0].length; j++) {
+	            System.out.print(matrix[i][j]);
+	        }
+	        System.out.println();
+	    }
 	}
 }
