@@ -480,6 +480,7 @@ public class Test {
 //	        System.out.println(i);
 //	    }
 	    
+<<<<<<< HEAD
 //	    Q321 q321 = new Q321();
 //	    int[] nums1 = new int[] {3,4,6,5};
 //	    int[] nums2 = new int[] {9,1,2,5,8,3};
@@ -493,6 +494,16 @@ public class Test {
 //	    int res2 = q204.countPrimes1(500000);
 ////	    System.out.println(res1);
 //	    System.out.println(res2);
+=======
+	    Q321 q321 = new Q321();
+	    int[] nums1 = new int[] {3,4,6,5};
+	    int[] nums2 = new int[] {9,1,2,5,8,3};
+	    int k = 4;
+	    int[] res = q321.maxNumber(nums1, nums2, k);
+	    for(int i:res){
+	        System.out.println(i);
+		}
+>>>>>>> branch 'master' of https://github.com/ldblovepeace/LeeCode.git
 	    
 //        System.out.println(Integer.valueOf("1011",2).toString());
 //	    String s = "10.0.3.193";
