@@ -1,5 +1,6 @@
 package main;
 
+import java.awt.datatransfer.SystemFlavorMap;
 import java.util.List;
 
 import Questions.Q100.Q34;
@@ -34,6 +35,7 @@ import Questions.Q600.Q541;
 import Questions.Q600.Q557;
 import Questions.Q600.Q566;
 import Questions.Q600.Q598;
+import Questions.Q700.Q649;
 import Questions.Q700.Q659;
 import Questions.Q700.Q661;
 import Questions.Q700.Q665;
@@ -654,8 +656,19 @@ public class Test {
 //            System.out.println(a);
 //        }
         
-        String s = " Hello World!";
-        Q151 q151 = new Q151();
-        q151.reverseWords(s);
+//        String s = " Hello World!";
+//        Q151 q151 = new Q151();
+//        q151.reverseWords(s);
+        
+        String senate = "RDDR";
+        Q649 q649 = new Q649();
+        String res = q649.predictPartyVictory(senate);
+        System.out.println(res);
+//        
+//        String s = "asd  fas sdfas";
+//        System.out.println(s.replaceAll(" ", ""));
+//        char[] c = new char[] {' ',' ','R'};
+//        String.copyValueOf(c);
+//        System.out.println(String.valueOf(c).replaceAll(" ", ""));
     }
 }
