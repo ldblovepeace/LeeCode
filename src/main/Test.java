@@ -14,6 +14,7 @@ import Questions.Q200.Q119;
 import Questions.Q200.Q125;
 import Questions.Q200.Q147;
 import Questions.Q200.Q148;
+import Questions.Q200.Q151;
 import Questions.Q200.Q164;
 import Questions.Q200.Q189;
 import Questions.Q300.Q204;
@@ -29,6 +30,8 @@ import Questions.Q500.Q453;
 import Questions.Q500.Q454;
 import Questions.Q500.Q498;
 import Questions.Q600.Q520;
+import Questions.Q600.Q541;
+import Questions.Q600.Q557;
 import Questions.Q600.Q566;
 import Questions.Q600.Q598;
 import Questions.Q700.Q659;
@@ -634,8 +637,25 @@ public class Test {
 //            System.out.println(";");
 //        }
         
-        String s = "Hello World";
-        Q58 q58 = new Q58();
-        System.out.println(q58.lengthOfLastWord(s));
+//        String s = "Hello World";
+//        Q58 q58 = new Q58();
+//        System.out.println(q58.lengthOfLastWord(s));
+        
+//        String s = "asfads";
+//        Q541 q541 = new Q541();
+//        String res = q541.reverseStr(s, 2);
+//        System.out.println(res);
+//        String s = "contest";
+//        Q557 q557 = new Q557();
+//        String res = q557.reverseWords2(s);
+//        System.out.println(res);
+//        String string="a   b  a  a ";
+//        for(String a:string.split("\\s+")){
+//            System.out.println(a);
+//        }
+        
+        String s = " Hello World!";
+        Q151 q151 = new Q151();
+        q151.reverseWords(s);
     }
 }
