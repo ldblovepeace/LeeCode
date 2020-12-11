@@ -4,6 +4,7 @@ import java.awt.datatransfer.SystemFlavorMap;
 import java.util.List;
 
 import Questions.Q100.Q34;
+import Questions.Q100.Q49;
 import Questions.Q100.Q54;
 import Questions.Q100.Q58;
 import Questions.Q100.Q59;
@@ -660,15 +661,18 @@ public class Test {
 //        Q151 q151 = new Q151();
 //        q151.reverseWords(s);
         
-        String senate = "RDDR";
-        Q649 q649 = new Q649();
-        String res = q649.predictPartyVictory(senate);
-        System.out.println(res);
+//        String senate = "RDDR";
+//        Q649 q649 = new Q649();
+//        String res = q649.predictPartyVictory(senate);
+//        System.out.println(res);
 //        
 //        String s = "asd  fas sdfas";
 //        System.out.println(s.replaceAll(" ", ""));
 //        char[] c = new char[] {' ',' ','R'};
 //        String.copyValueOf(c);
 //        System.out.println(String.valueOf(c).replaceAll(" ", ""));
+        String[] strs = new String[] {"eat","tea","tan","ate","nat","bat"};
+        Q49 q49 = new Q49();
+        q49.groupAnagrams2(strs);
     }
 }
