@@ -25,8 +25,10 @@ import Questions.Q300.Q238;
 import Questions.Q300.Q242;
 import Questions.Q400.Q304;
 import Questions.Q400.Q321;
+import Questions.Q400.Q376;
 import Questions.Q400.Q396;
 import Questions.Q400.Q493;
+import Questions.Q500.Q451;
 import Questions.Q500.Q452;
 import Questions.Q500.Q453;
 import Questions.Q500.Q454;
@@ -671,8 +673,16 @@ public class Test {
 //        char[] c = new char[] {' ',' ','R'};
 //        String.copyValueOf(c);
 //        System.out.println(String.valueOf(c).replaceAll(" ", ""));
-        String[] strs = new String[] {"eat","tea","tan","ate","nat","bat"};
-        Q49 q49 = new Q49();
-        q49.groupAnagrams2(strs);
+//        String[] strs = new String[] {"eat","tea","tan","ate","nat","bat"};
+//        Q49 q49 = new Q49();
+//        q49.groupAnagrams2(strs);
+        
+//        String s = "ttre";
+//        Q451 q451 = new Q451();
+//        q451.frequencySort(s);
+        int[] nums = new int[] {2,23,13,2,3,4234,12,3412,34,12,34,2,1,3,412,3,41,23,412,3,412,3,412,34,2,435,32,412};
+        Q376 q376 = new Q376();
+        System.out.println(q376.wiggleMaxLength(nums));
+
     }
 }
