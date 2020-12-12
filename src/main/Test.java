@@ -28,6 +28,7 @@ import Questions.Q400.Q321;
 import Questions.Q400.Q376;
 import Questions.Q400.Q396;
 import Questions.Q400.Q493;
+import Questions.Q500.Q423;
 import Questions.Q500.Q451;
 import Questions.Q500.Q452;
 import Questions.Q500.Q453;
@@ -680,9 +681,13 @@ public class Test {
 //        String s = "ttre";
 //        Q451 q451 = new Q451();
 //        q451.frequencySort(s);
-        int[] nums = new int[] {2,23,13,2,3,4234,12,3412,34,12,34,2,1,3,412,3,41,23,412,3,412,3,412,34,2,435,32,412};
-        Q376 q376 = new Q376();
-        System.out.println(q376.wiggleMaxLength(nums));
+//        int[] nums = new int[] {2,23,13,2,3,4234,12,3412,34,12,34,2,1,3,412,3,41,23,412,3,412,3,412,34,2,435,32,412};
+//        Q376 q376 = new Q376();
+//        System.out.println(q376.wiggleMaxLength(nums));
+        
+//        Q423 q423 = new Q423();
+//        String s = "owoztneoer";
+//        q423.originalDigits(s);
 
     }
 }
