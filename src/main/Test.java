@@ -43,6 +43,7 @@ import Questions.Q700.Q649;
 import Questions.Q700.Q659;
 import Questions.Q700.Q661;
 import Questions.Q700.Q665;
+import Questions.Q800.Q738;
 import Questions.Q800.Q767;
 import Questions.Q900.Q842;
 import common.ListNode;
@@ -688,6 +689,10 @@ public class Test {
 //        Q423 q423 = new Q423();
 //        String s = "owoztneoer";
 //        q423.originalDigits(s);
-
+        
+        Q738 q738 = new Q738();
+        int N = 1234;
+        int res = q738.monotoneIncreasingDigits(N);
+        System.out.println(res);
     }
 }
