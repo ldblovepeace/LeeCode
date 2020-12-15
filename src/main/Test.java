@@ -33,6 +33,7 @@ import Questions.Q500.Q451;
 import Questions.Q500.Q452;
 import Questions.Q500.Q453;
 import Questions.Q500.Q454;
+import Questions.Q500.Q467;
 import Questions.Q500.Q498;
 import Questions.Q600.Q520;
 import Questions.Q600.Q541;
@@ -43,6 +44,7 @@ import Questions.Q700.Q649;
 import Questions.Q700.Q659;
 import Questions.Q700.Q661;
 import Questions.Q700.Q665;
+import Questions.Q700.Q696;
 import Questions.Q800.Q738;
 import Questions.Q800.Q767;
 import Questions.Q900.Q842;
@@ -690,9 +692,19 @@ public class Test {
 //        String s = "owoztneoer";
 //        q423.originalDigits(s);
         
-        Q738 q738 = new Q738();
-        int N = 1234;
-        int res = q738.monotoneIncreasingDigits(N);
+//        Q738 q738 = new Q738();
+//        int N = 1234;
+//        int res = q738.monotoneIncreasingDigits(N);
+//        System.out.println(res);
+        
+//        String s = "00110";
+//        Q696 q696 = new Q696();
+//        int res = q696.countBinarySubstrings(s);
+//        System.out.println(res);
+        
+        String p = "zabcab";
+        Q467 q467 = new Q467();
+        int res = q467.findSubstringInWraproundString(p);
         System.out.println(res);
     }
 }
