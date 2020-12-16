@@ -40,6 +40,7 @@ import Questions.Q500.Q498;
 import Questions.Q600.Q506;
 import Questions.Q600.Q520;
 import Questions.Q600.Q535;
+import Questions.Q600.Q537;
 import Questions.Q600.Q541;
 import Questions.Q600.Q557;
 import Questions.Q600.Q566;
@@ -730,12 +731,20 @@ public class Test {
 //        String res = q299.getHint(secret, guess);
 //        System.out.println(res);
         
-        int[] nums = new int[] {15,2,158,4,26,451,5262,12,3};
-        Q506 q506 = new Q506();
-        String[] res = q506.findRelativeRanks(nums);
-        for(String s : res) {
-            System.out.print(s);
-            System.out.print(' ');
-        }
+//        int[] nums = new int[] {15,2,158,4,26,451,5262,12,3};
+//        Q506 q506 = new Q506();
+//        String[] res = q506.findRelativeRanks(nums);
+//        for(String s : res) {
+//            System.out.print(s);
+//            System.out.print(' ');
+//        }
+        
+//        String s = "-1";
+//        int i = Integer.parseInt(s);
+//        System.out.println(i);
+        
+        String a = "-1+-1i";
+        Q537 q537 = new Q537();
+        q537.complexNumberRV(a);
     }
 }
