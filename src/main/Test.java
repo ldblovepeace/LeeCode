@@ -24,6 +24,7 @@ import Questions.Q300.Q222;
 import Questions.Q300.Q238;
 import Questions.Q300.Q242;
 import Questions.Q300.Q290;
+import Questions.Q300.Q299;
 import Questions.Q400.Q304;
 import Questions.Q400.Q321;
 import Questions.Q400.Q376;
@@ -36,7 +37,9 @@ import Questions.Q500.Q453;
 import Questions.Q500.Q454;
 import Questions.Q500.Q467;
 import Questions.Q500.Q498;
+import Questions.Q600.Q506;
 import Questions.Q600.Q520;
+import Questions.Q600.Q535;
 import Questions.Q600.Q541;
 import Questions.Q600.Q557;
 import Questions.Q600.Q566;
@@ -703,14 +706,36 @@ public class Test {
 //        int res = q696.countBinarySubstrings(s);
 //        System.out.println(res);
         
-        String p = "zabcab";
-        Q467 q467 = new Q467();
-        int res = q467.findSubstringInWraproundString2(p);
-        System.out.println(res);
+//        String p = "zabcab";
+//        Q467 q467 = new Q467();
+//        int res = q467.findSubstringInWraproundString2(p);
+//        System.out.println(res);
         
 //        String pattern = "abba";
 //        String s = "dog cat cat dog";
 //        Q290 q290 = new Q290();
 //        q290.wordPattern(pattern, s);
+        
+//        Q535 q535 = new Q535();
+//        String longUrl = "https://leetcode.com/problems/design-tinyurl";
+//        String shortUrl = q535.encode(longUrl);
+//        String decodeShrotUrl = q535.decode(shortUrl);
+//        
+//        System.out.println(shortUrl);
+//        System.out.println(decodeShrotUrl);
+        
+//        Q299 q299 = new Q299();
+//        String secret = "1807";
+//        String guess = "7810";
+//        String res = q299.getHint(secret, guess);
+//        System.out.println(res);
+        
+        int[] nums = new int[] {15,2,158,4,26,451,5262,12,3};
+        Q506 q506 = new Q506();
+        String[] res = q506.findRelativeRanks(nums);
+        for(String s : res) {
+            System.out.print(s);
+            System.out.print(' ');
+        }
     }
 }
