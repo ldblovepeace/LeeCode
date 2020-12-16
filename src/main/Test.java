@@ -23,6 +23,7 @@ import Questions.Q300.Q204;
 import Questions.Q300.Q222;
 import Questions.Q300.Q238;
 import Questions.Q300.Q242;
+import Questions.Q300.Q290;
 import Questions.Q400.Q304;
 import Questions.Q400.Q321;
 import Questions.Q400.Q376;
@@ -704,7 +705,12 @@ public class Test {
         
         String p = "zabcab";
         Q467 q467 = new Q467();
-        int res = q467.findSubstringInWraproundString(p);
+        int res = q467.findSubstringInWraproundString2(p);
         System.out.println(res);
+        
+//        String pattern = "abba";
+//        String s = "dog cat cat dog";
+//        Q290 q290 = new Q290();
+//        q290.wordPattern(pattern, s);
     }
 }
