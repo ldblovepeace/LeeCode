@@ -4,6 +4,7 @@ import java.awt.datatransfer.SystemFlavorMap;
 import java.util.List;
 
 import Questions.Q100.Q34;
+import Questions.Q100.Q38;
 import Questions.Q100.Q49;
 import Questions.Q100.Q54;
 import Questions.Q100.Q58;
@@ -31,6 +32,7 @@ import Questions.Q400.Q376;
 import Questions.Q400.Q396;
 import Questions.Q400.Q493;
 import Questions.Q500.Q423;
+import Questions.Q500.Q443;
 import Questions.Q500.Q451;
 import Questions.Q500.Q452;
 import Questions.Q500.Q453;
@@ -44,12 +46,15 @@ import Questions.Q600.Q537;
 import Questions.Q600.Q541;
 import Questions.Q600.Q557;
 import Questions.Q600.Q566;
+import Questions.Q600.Q592;
 import Questions.Q600.Q598;
+import Questions.Q700.Q640;
 import Questions.Q700.Q649;
 import Questions.Q700.Q659;
 import Questions.Q700.Q661;
 import Questions.Q700.Q665;
 import Questions.Q700.Q696;
+import Questions.Q800.Q714;
 import Questions.Q800.Q738;
 import Questions.Q800.Q767;
 import Questions.Q900.Q842;
@@ -743,8 +748,47 @@ public class Test {
 //        int i = Integer.parseInt(s);
 //        System.out.println(i);
         
-        String a = "-1+-1i";
-        Q537 q537 = new Q537();
-        q537.complexNumberRV(a);
+//        String a = "-1+-1i";
+//        Q537 q537 = new Q537();
+//        q537.complexNumberRV(a);
+        
+//        Q714 q714 = new Q714();
+//        int[] prices = new int[] {3,1,3,2,8,4,9};
+//        int fee = 2;
+//        int res = q714.maxProfit(prices, fee);
+//        System.out.println(res);
+        
+//        String s = "14+17";
+//        System.out.println(Math.max(s.indexOf('-'), s.indexOf('+')));
+//        System.out.println(Integer.parseInt(s.substring(0,Math.max(s.indexOf('-'), s.indexOf('+')))));
+        Q592 q592 = new Q592();
+//        int res = q592.biggestCommonDivide(15, 6);
+//        String expression = "-17/14+17/10-11/13";
+//        String res = q592.fractionAddition(expression);
+//        System.out.println(res);
+        
+//        String s = "x+5-3+x";
+//        s = s.replaceAll("-","+-");
+//        System.out.println(s.indexOf('z'));
+//        String[] res = s.split("\\+");
+//        for(String i:res) {
+//            System.out.println(i);
+//        }
+        
+//        Q640 q640 = new Q640();
+//        String equation = "-x=6+x-2";
+//        String res = q640.solveEquation(equation);
+//        System.out.println(res);
+        
+//        Q38 q38 = new Q38();
+//        int n = 10;
+//        String res = q38.countAndSay(n);
+//        System.out.println(res);
+        
+        Q443 q443 = new Q443();
+        char[] chars = new char[] {'a','b','b','b','b','b','b','b','b','b','b','b','b','c'};
+        char[] chars1 = new char[] {'a','b','b','b','b','b','b','b','b','b','b','b','b'};
+
+        q443.compress1(chars1);
     }
 }
