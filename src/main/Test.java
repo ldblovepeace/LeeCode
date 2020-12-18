@@ -3,6 +3,8 @@ package main;
 import java.awt.datatransfer.SystemFlavorMap;
 import java.util.List;
 
+import Questions.Q100.Q12;
+import Questions.Q100.Q13;
 import Questions.Q100.Q34;
 import Questions.Q100.Q38;
 import Questions.Q100.Q49;
@@ -11,6 +13,7 @@ import Questions.Q100.Q58;
 import Questions.Q100.Q59;
 import Questions.Q100.Q62;
 import Questions.Q100.Q73;
+import Questions.Q100.Q8;
 import Questions.Q1400.Q1370;
 import Questions.Q200.Q118;
 import Questions.Q200.Q119;
@@ -19,11 +22,13 @@ import Questions.Q200.Q147;
 import Questions.Q200.Q148;
 import Questions.Q200.Q151;
 import Questions.Q200.Q164;
+import Questions.Q200.Q165;
 import Questions.Q200.Q189;
 import Questions.Q300.Q204;
 import Questions.Q300.Q222;
 import Questions.Q300.Q238;
 import Questions.Q300.Q242;
+import Questions.Q300.Q273;
 import Questions.Q300.Q290;
 import Questions.Q300.Q299;
 import Questions.Q400.Q304;
@@ -761,7 +766,7 @@ public class Test {
 //        String s = "14+17";
 //        System.out.println(Math.max(s.indexOf('-'), s.indexOf('+')));
 //        System.out.println(Integer.parseInt(s.substring(0,Math.max(s.indexOf('-'), s.indexOf('+')))));
-        Q592 q592 = new Q592();
+//        Q592 q592 = new Q592();
 //        int res = q592.biggestCommonDivide(15, 6);
 //        String expression = "-17/14+17/10-11/13";
 //        String res = q592.fractionAddition(expression);
@@ -784,11 +789,41 @@ public class Test {
 //        int n = 10;
 //        String res = q38.countAndSay(n);
 //        System.out.println(res);
+//        
+//        Q443 q443 = new Q443();
+//        char[] chars = new char[] {'a','b','b','b','b','b','b','b','b','b','b','b','b','c'};
+//        char[] chars1 = new char[] {'a','b','b','b','b','b','b','b','b','b','b','b','b'};
+//        char[] chars2 = new char[] {'a'};
+//        q443.compress1(chars);
         
-        Q443 q443 = new Q443();
-        char[] chars = new char[] {'a','b','b','b','b','b','b','b','b','b','b','b','b','c'};
-        char[] chars1 = new char[] {'a','b','b','b','b','b','b','b','b','b','b','b','b'};
-
-        q443.compress1(chars1);
+//        Q8 q8 = new Q8();
+////        String s = "-+42";
+//        String s = "3.1415";
+//
+//        int res = q8.myAtoi(s);
+//        System.out.println(res);
+        
+//        Q13 q13 = new Q13();
+////        String s = "MCMXCIV";
+//        String s = "MDCXCV";
+//        int res = q13.romanToInt(s);
+//        System.out.println(res);
+        
+//        Q12 q12 = new Q12();
+//        int num = 1994;
+//        String res = q12.intToRoman(num);
+//        System.out.println(res);
+        
+//        Q273 q273 = new Q273();
+//        int num = 1234567891;
+//        String res = q273.numberToWords(num);
+//        System.out.println(res);
+        
+        String version1 = "1";
+        String version2 = "1.1.0";
+        Q165 q165 = new Q165();
+        int res = q165.compareVersion(version1, version2);
+        System.out.println(res);
+        
     }
 }
