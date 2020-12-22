@@ -15,6 +15,7 @@ import Questions.Q100.Q62;
 import Questions.Q100.Q73;
 import Questions.Q100.Q8;
 import Questions.Q1400.Q1370;
+import Questions.Q200.Q103;
 import Questions.Q200.Q118;
 import Questions.Q200.Q119;
 import Questions.Q200.Q125;
@@ -32,6 +33,7 @@ import Questions.Q300.Q273;
 import Questions.Q300.Q290;
 import Questions.Q300.Q299;
 import Questions.Q400.Q304;
+import Questions.Q400.Q316;
 import Questions.Q400.Q321;
 import Questions.Q400.Q376;
 import Questions.Q400.Q396;
@@ -43,6 +45,7 @@ import Questions.Q500.Q452;
 import Questions.Q500.Q453;
 import Questions.Q500.Q454;
 import Questions.Q500.Q467;
+import Questions.Q500.Q481;
 import Questions.Q500.Q498;
 import Questions.Q600.Q506;
 import Questions.Q600.Q520;
@@ -59,6 +62,7 @@ import Questions.Q700.Q659;
 import Questions.Q700.Q661;
 import Questions.Q700.Q665;
 import Questions.Q700.Q696;
+import Questions.Q700.Q764;
 import Questions.Q800.Q714;
 import Questions.Q800.Q738;
 import Questions.Q800.Q767;
@@ -819,11 +823,43 @@ public class Test {
 //        String res = q273.numberToWords(num);
 //        System.out.println(res);
         
-        String version1 = "1";
-        String version2 = "1.1.0";
-        Q165 q165 = new Q165();
-        int res = q165.compareVersion(version1, version2);
-        System.out.println(res);
+//        String version1 = "1";
+//        String version2 = "1.1.0";
+//        Q165 q165 = new Q165();
+//        int res = q165.compareVersion(version1, version2);
+//        System.out.println(res);
+//        
+//        Q481 q481 = new Q481();
+//        int n = 3;
+//        String res = q481.constributeMagicalString(n);
+//        System.out.println(res);
+//        
+//        Q764 q764 = new Q764();
+//        int[] cost = {1, 100, 1, 1, 1, 100, 1, 1, 100, 1};
+//        int res = q764.minCostClimbingStairs(cost);
+//        System.out.println(res);
+        
+//        Q316 q316 = new Q316();
+//        String s = "abacb";
+//        String res = q316.removeDuplicateLetters(s);
+//        System.out.println(res);
+        
+        Q103 q103 = new Q103();
+        TreeNode root = new TreeNode(3);
+        root.left = new TreeNode(9);
+        root.right = new TreeNode(20);
+        root.right.left = new TreeNode(15);
+        root.right.right = new TreeNode(7);
+        
+        List<List<Integer>> res = q103.zigzagLevelOrder(root);
+        
+        for(List<Integer> l:res) {
+            for(int i:l) {
+                System.out.print(i);
+                System.out.print(" ");
+            }
+            System.out.println(" ");
+        }
         
     }
 }
