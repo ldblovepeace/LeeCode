@@ -1,6 +1,7 @@
 package main;
 
 import java.awt.datatransfer.SystemFlavorMap;
+import java.util.ArrayList;
 import java.util.List;
 
 import Questions.Q100.Q12;
@@ -36,6 +37,7 @@ import Questions.Q400.Q304;
 import Questions.Q400.Q316;
 import Questions.Q400.Q321;
 import Questions.Q400.Q376;
+import Questions.Q400.Q392;
 import Questions.Q400.Q396;
 import Questions.Q400.Q493;
 import Questions.Q500.Q423;
@@ -49,6 +51,7 @@ import Questions.Q500.Q481;
 import Questions.Q500.Q498;
 import Questions.Q600.Q506;
 import Questions.Q600.Q520;
+import Questions.Q600.Q524;
 import Questions.Q600.Q535;
 import Questions.Q600.Q537;
 import Questions.Q600.Q541;
@@ -840,26 +843,49 @@ public class Test {
 //        System.out.println(res);
         
 //        Q316 q316 = new Q316();
-//        String s = "abacb";
+//        String s = "cbacdcbc";
 //        String res = q316.removeDuplicateLetters(s);
 //        System.out.println(res);
         
-        Q103 q103 = new Q103();
-        TreeNode root = new TreeNode(3);
-        root.left = new TreeNode(9);
-        root.right = new TreeNode(20);
-        root.right.left = new TreeNode(15);
-        root.right.right = new TreeNode(7);
+//        Q103 q103 = new Q103();
+//        TreeNode root = new TreeNode(3);
+//        root.left = new TreeNode(9);
+//        root.right = new TreeNode(20);
+//        root.right.left = new TreeNode(15);
+//        root.right.right = new TreeNode(7);
+//        
+//        List<List<Integer>> res = q103.zigzagLevelOrder(root);
+//        
+//        for(List<Integer> l:res) {
+//            for(int i:l) {
+//                System.out.print(i);
+//                System.out.print(" ");
+//            }
+//            System.out.println(" ");
+//        }
         
-        List<List<Integer>> res = q103.zigzagLevelOrder(root);
+//        Q481 q481 = new Q481();
+//        int n = 10;
+//        String res = q481.constributeMagicalString(n);
+//        System.out.println(res);
         
-        for(List<Integer> l:res) {
-            for(int i:l) {
-                System.out.print(i);
-                System.out.print(" ");
-            }
-            System.out.println(" ");
-        }
+//        Q392 q392 = new Q392();
+//        String s = "abcd";
+//        String t = "ahbgdc";
+//        boolean res = q392.isSubsequence(s, t);
+//        System.out.println(res);
         
+        Q524 q524 = new Q524();
+        String s = "abpcplea";
+        List<String> l = new ArrayList<>();
+        l.add("a");
+        l.add("b");
+        l.add("c");
+        String res = q524.findLongestWord(s, l);
+        String res1 = q524.findLongestWord1(s, l);
+
+        System.out.println(res);
+        System.out.println(res1);
+
     }
 }

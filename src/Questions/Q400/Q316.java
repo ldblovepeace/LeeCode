@@ -18,12 +18,16 @@ public class Q316 {
         Stack<Character> res = new Stack<>();
         for(int i=0; i<n; i++) {
             char c = s.charAt(i);
-            while(!res.isEmpty() && res.peek() > c &&  record[c - 'a'] > 0 && filled[res.peek()-'a'] == 0) {
-                filled[res.pop() - 'a'] = 0;
-            }
             if(filled[c - 'a'] == 0) {
+//          如果当前字符没有存储过
+                while(!res.isEmpty()  && res.peek() > c &&  record[res.peek() - 'a'] > 0) {
+//                  判断栈顶值比当前值大，且后续有与栈顶相同的字符，那么栈顶弹出，记录是否保存的置为0
+                  filled[res.pop() - 'a'] = 0;
+                }
+//            退出循环代表，当前栈顶比后一个字符小，或者后续没有相同的字符
                 res.push(c);
                 filled[c - 'a'] = 1;
+            
             }
             record[c - 'a']--;
         }
