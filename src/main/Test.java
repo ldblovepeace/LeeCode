@@ -1,7 +1,9 @@
 package main;
 
 import java.awt.datatransfer.SystemFlavorMap;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import Questions.Q100.Q12;
@@ -13,6 +15,7 @@ import Questions.Q100.Q54;
 import Questions.Q100.Q58;
 import Questions.Q100.Q59;
 import Questions.Q100.Q62;
+import Questions.Q100.Q67;
 import Questions.Q100.Q73;
 import Questions.Q100.Q8;
 import Questions.Q1400.Q1370;
@@ -20,6 +23,7 @@ import Questions.Q200.Q103;
 import Questions.Q200.Q118;
 import Questions.Q200.Q119;
 import Questions.Q200.Q125;
+import Questions.Q200.Q135;
 import Questions.Q200.Q147;
 import Questions.Q200.Q148;
 import Questions.Q200.Q151;
@@ -875,17 +879,32 @@ public class Test {
 //        boolean res = q392.isSubsequence(s, t);
 //        System.out.println(res);
         
-        Q524 q524 = new Q524();
-        String s = "abpcplea";
-        List<String> l = new ArrayList<>();
-        l.add("a");
-        l.add("b");
-        l.add("c");
-        String res = q524.findLongestWord(s, l);
-        String res1 = q524.findLongestWord1(s, l);
-
-        System.out.println(res);
-        System.out.println(res1);
-
+//        Q524 q524 = new Q524();
+//        String s = "abpcplea";
+//        List<String> l = new ArrayList<>();
+//        l.add("a");
+//        l.add("b");
+//        l.add("c");
+//        String res = q524.findLongestWord(s, l);
+//        String res1 = q524.findLongestWord1(s, l);
+//
+//        System.out.println(res);
+//        System.out.println(res1);
+        
+//        Q135 q135 = new Q135();
+//        int[] ratings = {1,2,87,87,87,2,1};
+//        int res = q135.candy(ratings);
+//        System.out.println(res);
+        
+//        String begin = new SimpleDateFormat("yyyyMMddHHmmss")
+//                .format(new Date(System.currentTimeMillis() - 60 * 60 * 1000));
+//        String end = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date(System.currentTimeMillis()));
+//        System.out.println(begin);
+//        System.out.println(end);
+        
+        String a = "10110";
+        String b = "110";
+        Q67 q67 = new Q67();
+        q67.addBinary(a, b);
     }
 }
