@@ -10,6 +10,7 @@ import Questions.Q100.Q12;
 import Questions.Q100.Q13;
 import Questions.Q100.Q34;
 import Questions.Q100.Q38;
+import Questions.Q100.Q43;
 import Questions.Q100.Q49;
 import Questions.Q100.Q54;
 import Questions.Q100.Q58;
@@ -902,9 +903,15 @@ public class Test {
 //        System.out.println(begin);
 //        System.out.println(end);
         
-        String a = "10110";
-        String b = "110";
-        Q67 q67 = new Q67();
-        q67.addBinary(a, b);
+//        String a = "10110";
+//        String b = "110";
+//        Q67 q67 = new Q67();
+//        q67.addBinary(a, b);
+        
+        String num1 = "12345";
+        String num2 = "1";
+        Q43 q43 = new Q43();
+        String res = q43.multiply(num1, num2);
+        System.out.println(res);
     }
 }
