@@ -32,6 +32,7 @@ import Questions.Q200.Q164;
 import Questions.Q200.Q165;
 import Questions.Q200.Q189;
 import Questions.Q300.Q204;
+import Questions.Q300.Q205;
 import Questions.Q300.Q222;
 import Questions.Q300.Q238;
 import Questions.Q300.Q242;
@@ -39,6 +40,7 @@ import Questions.Q300.Q273;
 import Questions.Q300.Q290;
 import Questions.Q300.Q299;
 import Questions.Q400.Q304;
+import Questions.Q400.Q306;
 import Questions.Q400.Q316;
 import Questions.Q400.Q321;
 import Questions.Q400.Q376;
@@ -908,10 +910,33 @@ public class Test {
 //        Q67 q67 = new Q67();
 //        q67.addBinary(a, b);
         
-        String num1 = "12345";
-        String num2 = "1";
-        Q43 q43 = new Q43();
-        String res = q43.multiply(num1, num2);
+//        String num1 = "12345";
+//        String num2 = "1";
+//        Q43 q43 = new Q43();
+//        String res = q43.multiply(num1, num2);
+//        System.out.println(res);
+        
+//        String s = "ab";
+//        String t = "cd";
+//        Q205 q205 = new Q205();
+//        boolean res = q205.isIsomorphic(s, t);
+//        System.out.println(res);
+        
+//        String s = "abcdefg";
+//        String res1 = s.substring(0,1);
+//        String res2 = s.substring(1,2);
+//        System.out.println(res1);
+//        System.out.println(res2);
+        
+        String num = "121474836472147483648";
+//        //"0235813" "101" "121474836472147483648"
+        Q306 q306 = new Q306();
+        boolean res = q306.isAdditiveNumber(num);
         System.out.println(res);
+//        
+//        String s1 = "123";
+//        String s2 = "12";
+//        String res = q306.stringAdd(s1, s2);
+//        System.out.println(res);
     }
 }
