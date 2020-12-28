@@ -8,6 +8,7 @@ import java.util.List;
 
 import Questions.Q100.Q12;
 import Questions.Q100.Q13;
+import Questions.Q100.Q28;
 import Questions.Q100.Q34;
 import Questions.Q100.Q38;
 import Questions.Q100.Q43;
@@ -15,8 +16,10 @@ import Questions.Q100.Q49;
 import Questions.Q100.Q54;
 import Questions.Q100.Q58;
 import Questions.Q100.Q59;
+import Questions.Q100.Q6;
 import Questions.Q100.Q62;
 import Questions.Q100.Q67;
+import Questions.Q100.Q68;
 import Questions.Q100.Q73;
 import Questions.Q100.Q8;
 import Questions.Q1400.Q1370;
@@ -53,6 +56,7 @@ import Questions.Q500.Q451;
 import Questions.Q500.Q452;
 import Questions.Q500.Q453;
 import Questions.Q500.Q454;
+import Questions.Q500.Q459;
 import Questions.Q500.Q467;
 import Questions.Q500.Q481;
 import Questions.Q500.Q498;
@@ -928,15 +932,40 @@ public class Test {
 //        System.out.println(res1);
 //        System.out.println(res2);
         
-        String num = "121474836472147483648";
-//        //"0235813" "101" "121474836472147483648"
-        Q306 q306 = new Q306();
-        boolean res = q306.isAdditiveNumber(num);
-        System.out.println(res);
+//        String num = "121474836472147483648";
+////        //"0235813" "101" "121474836472147483648"
+//        Q306 q306 = new Q306();
+//        boolean res = q306.isAdditiveNumber(num);
+//        System.out.println(res);
 //        
 //        String s1 = "123";
 //        String s2 = "12";
 //        String res = q306.stringAdd(s1, s2);
 //        System.out.println(res);
+        
+//        Q6 q6 = new Q6();
+//        int numRows = 1;
+//        String s = "L";
+//        String res = q6.convert(s, numRows);
+//        System.out.println(res);
+//        
+//        String[] words = {"What","must","be","acknowledgment","shall","be"};
+//        Q68 q68 = new Q68();
+//        int maxWidth = 18;
+//        List<String> res = q68.fullJustify(words, maxWidth);
+//        for(String s:res) {
+//            System.out.println(s);
+//        }
+        
+//        Q28 q28 = new Q28();
+//        String haystack = "a";
+//        String needle = "a";
+//        int res = q28.strStr(haystack, needle);
+//        System.out.println(res);
+        
+        String s = "aabaaba";
+        Q459 q459 = new Q459();
+        boolean res = q459.repeatedSubstringPattern(s);
+        System.out.println(res);
     }
 }
