@@ -3,8 +3,10 @@ package Questions.Q500;
 public class Q459 {
     public boolean repeatedSubstringPattern(String s) {
         for(int i=1; i<=s.length()/2; i++) {
-            if(repeatedSubstringPattern(s, i)) {
-                return true;
+            if(s.length() % i == 0) {
+                if(repeatedSubstringPattern(s, i)) {
+                    return true;
+                }
             }
         }
         return false;

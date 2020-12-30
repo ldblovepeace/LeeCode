@@ -22,12 +22,14 @@ import Questions.Q100.Q67;
 import Questions.Q100.Q68;
 import Questions.Q100.Q73;
 import Questions.Q100.Q8;
+import Questions.Q1100.Q1046;
 import Questions.Q1400.Q1370;
 import Questions.Q200.Q103;
 import Questions.Q200.Q118;
 import Questions.Q200.Q119;
 import Questions.Q200.Q125;
 import Questions.Q200.Q135;
+import Questions.Q200.Q143;
 import Questions.Q200.Q147;
 import Questions.Q200.Q148;
 import Questions.Q200.Q151;
@@ -36,6 +38,7 @@ import Questions.Q200.Q165;
 import Questions.Q200.Q189;
 import Questions.Q300.Q204;
 import Questions.Q300.Q205;
+import Questions.Q300.Q214;
 import Questions.Q300.Q222;
 import Questions.Q300.Q238;
 import Questions.Q300.Q242;
@@ -963,9 +966,36 @@ public class Test {
 //        int res = q28.strStr(haystack, needle);
 //        System.out.println(res);
         
-        String s = "aabaaba";
-        Q459 q459 = new Q459();
-        boolean res = q459.repeatedSubstringPattern(s);
+//        String s = "aabaaba";
+//        Q459 q459 = new Q459();
+//        boolean res = q459.repeatedSubstringPattern(s);
+//        System.out.println(res);
+        
+//        ListNode head = new ListNode();
+//        ListNode head = new ListNode(1);
+//        head.next = new ListNode(2);
+//        head.next.next = new ListNode(3);
+//        head.next.next.next = new ListNode(4);
+////        head.next.next.next.next = new ListNode(5);
+//        Q143 q143 = new Q143();
+//        q143.reorderList(head);
+//        ListNode res = head;
+//        while(res != null) {
+//            System.out.println(res.val);
+//            res = res.next;
+//        }
+        
+//        System.out.println( (args.length == 0) ? "yday" : args[0] );
+//        Q1046 q1046 = new Q1046();
+//        int[] stones = {3,4,8,9,4,2,5,7,10};
+////        {7,6,7,6,9} {3,4,8,9,4,2,5,7,10}
+//        int res = q1046.lastStoneWeight(stones);
+//        System.out.println(res);
+        
+        Q214 q214 = new Q214();
+        String s = "aabvd";
+//        System.out.println(q214.isPalindrome(s));
+        String res = q214.shortestPalindrome(s);
         System.out.println(res);
     }
 }
